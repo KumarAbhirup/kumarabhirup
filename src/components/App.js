@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
-import logo from '../assets/images/kumar.jpeg';
-import '../assets/styles/App.css';
+
+import HomepageParallax from './mobirise/HomepageParallax';
+import WhoAmI from './mobirise/WhoAmI';
+import SocialLinks from './mobirise/SocialLinks';
+import Skills from './mobirise/Skills';
+import Portfolio from './mobirise/Portfolio';
+import Banner from './mobirise/Banner';
+import Contact from './mobirise/Contact';
+import Activities from './mobirise/Activities';
+import Footer from './mobirise/Footer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" style={{borderRadius: '100%'}} />
-          <p>
-            kumarabhirup.com gets a headstart!
-          </p>
-          <a
-            className="App-link"
-            href="https://kumarabhirup.com"
-            rel="noopener noreferrer"
-          >
-            Kumar Abhirup
-          </a>
-        </header>
-      </div>
+      <>
+        <HomepageParallax />
+        <WhoAmI />
+        <SocialLinks />
+        <Skills />
+        <Portfolio />
+        <Banner />
+        <Contact />
+        <Activities />
+        <Footer />
+      </>
     );
   }
 }
