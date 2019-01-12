@@ -28,7 +28,8 @@ export default class Contact extends Component {
                       </div>
                       <div data-form-type="formoid">
                           {/* <div data-form-alert="" hidden="">Hey, will get back instantly!</div> */}
-                          <form className="block mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" data-form-email="true" value="ZN0j7NmqVY0QZgNfgpXbVrEb+fSwGtRfuih/bXb+bmGmboy9gY6j4cqn1SrPOU8DiX6rDqOH36QZsG1nELSaPcnxhFlDo49/pAmowng6OxkRBSGjbEv3MGt5qrI8tjfJ" />
+                          <form className="block mbr-form" method="post" data-form-title="Contact form">
+                          {/* <input type="hidden" data-form-email="true" value="ZN0j7NmqVY0QZgNfgpXbVrEb+fSwGtRfuih/bXb+bmGmboy9gY6j4cqn1SrPOU8DiX6rDqOH36QZsG1nELSaPcnxhFlDo49/pAmowng6OxkRBSGjbEv3MGt5qrI8tjfJ" /> */}
                               <div className="row">
                                   <div className="col-md-6 multi-horizontal" data-for="name">
                                       <input type="text" className="form-control input" name="name" data-form-field="Name" placeholder="Your good name 😃" required="" id="name-form4-n" />

@@ -15,7 +15,7 @@ export default class Activities extends Component {
                   <div className="row timeline-element reverse separline">      
                       <div className="timeline-date-panel col-xs-12 col-md-6  align-left">         
                           <div className="time-line-date-content">
-                              <p className="mbr-timeline-date mbr-fonts-style display-5">15 January 2019 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+                              <p className="mbr-timeline-date mbr-fonts-style display-5">15 January 2019</p>
                           </div>
                       </div>
                 <span className="iconBackground"></span>
@@ -31,8 +31,7 @@ export default class Activities extends Component {
                   <div className="row timeline-element  separline">
                       <div className="timeline-date-panel col-xs-12 col-md-6 align-right">
                           <div className="time-line-date-content">
-                              <p className="mbr-timeline-date mbr-fonts-style display-5">
-                                  1 January 2019</p>
+                              <p className="mbr-timeline-date mbr-fonts-style display-5">1 January 2019</p>
                           </div>
                       </div>
                       <span className="iconBackground"></span>

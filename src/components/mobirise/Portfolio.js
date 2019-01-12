@@ -44,7 +44,7 @@ export default class Portfolio extends Component {
                         <div className="media-container-row container">
                             <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
                                 <div className="card-img">
-                                    <img src={this.images[1]} alt="Mobirise" media-simple="true" />
+                                    <img src={this.images[1]} alt="bulk-mail-cli" media-simple="true" />
                                 </div>
                                 <h4 className="card-title py-2 mbr-fonts-style display-5">
                                     bulk-mail-cli</h4>
@@ -53,7 +53,7 @@ export default class Portfolio extends Component {
                             </div>
                             <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
                                 <div className="card-img">
-                                    <img src={this.images[2]} alt="Mobirise" title="" media-simple="true" />
+                                    <img src={this.images[2]} alt="iconic-input" media-simple="true" />
                                 </div>
                                 <h4 className="card-title py-2 mbr-fonts-style display-5">
                                     iconic-input</h4>
@@ -62,7 +62,7 @@ export default class Portfolio extends Component {
                             </div>
                             <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
                                 <div className="card-img">
-                                    <img src={this.images[3]} alt="Mobirise" media-simple="true" />
+                                    <img src={this.images[3]} alt="kumarabhirup.com" media-simple="true" />
                                 </div>
                                 <h4 className="card-title py-2 mbr-fonts-style display-5">
                                     kumarabhirup.com</h4>

@@ -1,3 +1,1 @@
-export const meta = {
-  domain: 'kumarabhirup.com'
-}
+export const config = {}

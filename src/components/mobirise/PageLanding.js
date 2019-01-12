@@ -19,7 +19,7 @@ export default class PageLanding extends Component {
                           <div className="icons-media-container mbr-white">
                               <div className="card col-12 col-md-6 col-lg-3">
                                   <div className="icon-block">
-                                  <a href="https://mobirise.com/">
+                                  <a href="#">
                                       <span className="mbr-iconfont mbri-wifi" media-simple="true"></span>
                                   </a>
                                   </div>
@@ -29,7 +29,7 @@ export default class PageLanding extends Component {
 
                               <div className="card col-12 col-md-6 col-lg-3">
                                   <div className="icon-block">
-                                      <a href="https://mobirise.com/">
+                                      <a href="#">
                                           <span className="mbr-iconfont mbri-devices" media-simple="true"></span>
                                       </a>
                                   </div>
@@ -39,7 +39,7 @@ export default class PageLanding extends Component {
 
                               <div className="card col-12 col-md-6 col-lg-3">
                                   <div className="icon-block">
-                                      <a href="https://mobirise.com/">
+                                      <a href="#">
                                           <span className="mbr-iconfont mbri-laptop" media-simple="true"></span>
                                       </a>
                                   </div>
@@ -49,7 +49,7 @@ export default class PageLanding extends Component {
 
                               <div className="card col-12 col-md-6 col-lg-3">
                                   <div className="icon-block">
-                                      <a href="https://mobirise.com/">
+                                      <a href="#">
                                           <span className="mbr-iconfont mbri-speed" media-simple="true"></span>
                                       </a>
                                   </div>
