@@ -60,7 +60,7 @@ export default class Activities extends Component {
                               {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
                               <h4 className="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                                   Merry Christmas 🎄</h4>      
-                              <p className="mbr-timeline-text mbr-fonts-style display-7">Wish you a very happy Xmas!<br /><br />Jingle bells 🔔 &nbsp;jingle bells<br />Jingle all the way,<br />Oh what fun it is to ride<br />In a one-horse open sleigh.<br /></p>
+                              <p className="mbr-timeline-text mbr-fonts-style display-7">Wish you a very happy Xmas!<br /><br />Jingle bells 🔔 &nbsp;jingle bells<br />Jingle all the way,<br />Oh what fun it is to ride<br />In a one-horse open sleigh.</p>
                           </div>
                       </div>
                   </div>

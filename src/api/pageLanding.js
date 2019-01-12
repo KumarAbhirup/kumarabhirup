@@ -46,3 +46,18 @@ export const button = {
     link: `${meta.domain}`
   }
 }
+
+export const homeButtons = {
+  1: {
+    class: `btn-secondary`,
+    icon: `mbri-rocket`,
+    text: `ABOUT ME`,
+    link: `about`
+  },
+  2: {
+    class: `btn-white-outline`,
+    icon: `mbri-devices`,
+    text: `PORTFOLIO`,
+    link: `portfolio`
+  },
+}

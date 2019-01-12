@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import NavBar from '../components/mobirise/NavBar';
 import HomepageParallax from '../components/mobirise/HomepageParallax';
 import WhoAmI from '../components/mobirise/WhoAmI';
 import SocialLinks from '../components/mobirise/SocialLinks';
@@ -14,6 +15,7 @@ export default class homePage extends Component {
   render() {
     return (
       <>
+        {/* <NavBar /> */}
         <HomepageParallax />
         <WhoAmI />
         <SocialLinks />
