@@ -96,8 +96,8 @@ export default class Skills extends Component {
             <div className="card p-3 align-center">
               <div className="wrap">
                 <CircularProgressbar
-                  percentage={44}
-                  text={`${44}%`}
+                  percentage={55}
+                  text={`${55}%`}
                   background
                   backgroundPadding={6}
                   strokeWidth={6}

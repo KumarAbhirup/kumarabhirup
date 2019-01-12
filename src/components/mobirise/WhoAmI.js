@@ -6,7 +6,7 @@ import KumarAbhirup from '../../assets/images/kumar.jpeg'
 export default class WhoAmI extends Component {
   render() {
     return (
-        <Element name="about">
+        <Element name="about" id="about">
         <section className="toggle2 cid-rezPziFdFs" id="toggle2-o next" data-rv-view="228">
                 <div className="container">
                     <div className="media-container-row">
@@ -21,7 +21,7 @@ export default class WhoAmI extends Component {
                                         <div className="card-header" role="tab" id="headingOne">
                                             <a role="button" className="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse1_8" aria-expanded="false" aria-controls="collapse1">
                                                 <h4 className="mbr-fonts-style display-5">
-                                                    <span className="sign mbr-iconfont mbri-arrow-down inactive"></span>&nbsp;Am I not too young to code? 🖥️</h4>
+                                                    <span className="sign mbr-iconfont mbri-arrow-down inactive"></span> Am I not too young to code? 🖥️</h4>
                                             </a>
                                         </div>
                                         <div id="collapse1_8" className="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
