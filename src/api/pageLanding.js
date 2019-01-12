@@ -35,7 +35,14 @@ export const arrowTakesWhere = {
 }
 
 export const button = {
-  icon: `mbrib-user`,
-  text: `WHO AM I?`,
-  link: `${meta.domain}`
+  all: {
+    icon: `mbrib-user`,
+    text: `WHO AM I?`,
+    link: `${meta.domain}#about`
+  },
+  page404: {
+    icon: `mbrib-smile-face`,
+    text: `VISIT HOMEPAGE`,
+    link: `${meta.domain}`
+  }
 }

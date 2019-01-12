@@ -13,7 +13,10 @@ export default class Router extends Component {
         <Switch>
           <Route exact path='/' component={homePage}/>
           <Route path='/uses' component={usesPage}/>
+
           <Route path='/portfolio' component={portfolioPage}/>
+          <Route path='/projects' component={portfolioPage}/>
+          
           <Route component={page404} />
         </Switch>
       </main>
