@@ -1,7 +1,21 @@
 import React, { Component } from 'react'
+import CircularProgressbar from 'react-circular-progressbar'
+import 'react-circular-progressbar/dist/styles.css'
 
 export default class Skills extends Component {
   render() {
+    const circularProgressbarStyles = {
+      background: {
+        fill: '#3e98c7',
+      },
+      text: {
+        fill: '#fff',
+      },
+      path: {
+        stroke: '#fff',
+      },
+      trail: { stroke: 'transparent' },
+    }
     return (
       <section className="progress-bars3 cid-rezDHMdky7" id="progress-bars3-j" data-rv-view="234">
 
@@ -15,9 +29,14 @@ export default class Skills extends Component {
           <div className="media-container-row pt-5 mt-2">
             <div className="card p-3 align-center">
               <div className="wrap">
-                <div className="pie_progress progress1" role="progressbar" data-goal="95">
-                  <p className="pie_progress__number mbr-fonts-style display-5">95%</p>
-                </div>
+                <CircularProgressbar
+                  percentage={95}
+                  text={`${95}%`}
+                  background
+                  backgroundPadding={6}
+                  strokeWidth={6}
+                  styles={circularProgressbarStyles}
+                />
               </div>
               <div className="mbr-crt-title pt-3">
                 <h4 className="card-title py-2 mbr-fonts-style display-5">HTML</h4>
@@ -26,9 +45,14 @@ export default class Skills extends Component {
 
             <div className="card p-3 align-center">
               <div className="wrap">
-                <div className="pie_progress progress2" role="progressbar" data-goal="59">
-                  <p className="pie_progress__number mbr-fonts-style display-5">59%</p>
-                </div>
+                <CircularProgressbar
+                  percentage={67}
+                  text={`${67}%`}
+                  background
+                  backgroundPadding={6}
+                  strokeWidth={6}
+                  styles={circularProgressbarStyles}
+                />
               </div>
               <div className="mbr-crt-title pt-3">
                 <h4 className="card-title py-2 mbr-fonts-style display-5">
@@ -38,9 +62,14 @@ export default class Skills extends Component {
 
             <div className="card p-3 align-center">
               <div className="wrap">
-                <div className="pie_progress progress3" role="progressbar" data-goal="75">
-                  <p className="pie_progress__number mbr-fonts-style display-5">75%</p>
-                </div>
+                <CircularProgressbar
+                  percentage={75}
+                  text={`${75}%`}
+                  background
+                  backgroundPadding={6}
+                  strokeWidth={6}
+                  styles={circularProgressbarStyles}
+                />
               </div>
               <div className="mbr-crt-title pt-3">
                 <h4 className="card-title py-2 mbr-fonts-style display-5">
@@ -50,9 +79,14 @@ export default class Skills extends Component {
 
             <div className="card p-3 align-center">
               <div className="wrap">
-                <div className="pie_progress progress4" role="progressbar" data-goal="62">
-                  <p className="pie_progress__number mbr-fonts-style display-5">62%</p>
-                </div>
+                <CircularProgressbar
+                  percentage={62}
+                  text={`${62}%`}
+                  background
+                  backgroundPadding={6}
+                  strokeWidth={6}
+                  styles={circularProgressbarStyles}
+                />
               </div>
               <div className="mbr-crt-title pt-3">
                 <h4 className="card-title py-2 mbr-fonts-style display-5">React.JS</h4>
@@ -61,9 +95,14 @@ export default class Skills extends Component {
 
             <div className="card p-3 align-center">
               <div className="wrap">
-                <div className="pie_progress progress5" role="progressbar" data-goal="44">
-                  <p className="pie_progress__number mbr-fonts-style display-5">44%</p>
-                </div>
+                <CircularProgressbar
+                  percentage={44}
+                  text={`${44}%`}
+                  background
+                  backgroundPadding={6}
+                  strokeWidth={6}
+                  styles={circularProgressbarStyles}
+                />
               </div>
               <div className="mbr-crt-title pt-3">
                 <h4 className="card-title py-2 mbr-fonts-style display-5">

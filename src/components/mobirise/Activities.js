@@ -21,7 +21,7 @@ export default class Activities extends Component {
                 <span className="iconBackground"></span>
                   <div className="col-xs-12 col-md-6 align-right">
                       <div className="timeline-text-content">
-                          <h4 className="mbr-timeline-title pb-3 mbr-fonts-style display-5">Now on <a href="https://twitter.com/kumar_abhirup" target="_blank">Twitter</a>&nbsp;🐦</h4>
+                          <h4 className="mbr-timeline-title pb-3 mbr-fonts-style display-5">Now on <a href="https://twitter.com/kumar_abhirup" target="_blank" rel="noopener noreferrer">Twitter</a>&nbsp;🐦</h4>
                           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
                           <p className="mbr-timeline-text mbr-fonts-style display-7"><strong>I'm yet to create an interface to provide latest updates</strong> here in this section. Till the time, I'll be announcing things on Twitter. Just as I always do... 😉</p>
                       </div>

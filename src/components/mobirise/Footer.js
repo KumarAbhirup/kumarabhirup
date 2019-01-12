@@ -51,27 +51,27 @@ export default class Footer extends Component {
                       <div className="col-md-6">
                           <div className="social-list align-right">
                               <div className="soc-item">
-                                  <a href="https://twitter.com/kumar_abhirup" target="_blank">
+                                  <a href="https://twitter.com/kumar_abhirup" target="_blank" rel="noopener noreferrer">
                                       <span className="mbr-iconfont mbr-iconfont-social socicon-twitter socicon" media-simple="true"></span>
                                   </a>
                               </div>
                               <div className="soc-item">
-                                  <a href="https://www.facebook.com/krish.abhirup" target="_blank">
+                                  <a href="https://www.facebook.com/krish.abhirup" target="_blank" rel="noopener noreferrer">
                                       <span className="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" media-simple="true"></span>
                                   </a>
                               </div>
                               <div className="soc-item">
-                                  <a href="https://www.youtube.com/c/IQubex" target="_blank">
+                                  <a href="https://www.youtube.com/c/IQubex" target="_blank" rel="noopener noreferrer">
                                       <span className="mbr-iconfont mbr-iconfont-social socicon-youtube socicon" media-simple="true"></span>
                                   </a>
                               </div>
                               <div className="soc-item">
-                                  <a href="https://github.com/KumarAbhirup" target="_blank">
+                                  <a href="https://github.com/KumarAbhirup" target="_blank" rel="noopener noreferrer">
                                       <span className="mbr-iconfont mbr-iconfont-social socicon-github socicon" media-simple="true"></span>
                                   </a>
                               </div>
                               <div className="soc-item">
-                                  <a href="https://www.linkedin.com/in/kumar-abhirup/" target="_blank">
+                                  <a href="https://www.linkedin.com/in/kumar-abhirup/" target="_blank" rel="noopener noreferrer">
                                       <span className="mbr-iconfont mbr-iconfont-social socicon-linkedin socicon" media-simple="true"></span>
                                   </a>
                               </div>
