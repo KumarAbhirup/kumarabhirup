@@ -1,5 +1,5 @@
 import React from 'react'
-import { meta } from '../api'
+import { meta } from '../api/meta'
 
 export const whoAmI = {
   title: `👁️‍🗨️ Who am I?`,

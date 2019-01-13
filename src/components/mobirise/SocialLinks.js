@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { socialLinks } from '../../api/socialLinks';
 
 export default class SocialLinks extends Component {
   render() {
@@ -8,23 +9,13 @@ export default class SocialLinks extends Component {
         <div className="container">
           <div className="media-container-row">
             <div className="col-md-8 align-center">
-              <h2 className="pb-3 mbr-fonts-style display-2"><strong>I am here!</strong></h2>
+              <h2 className="pb-3 mbr-fonts-style display-2"><strong>{socialLinks.title}</strong></h2>
               <div className="social-list pl-0 mb-0">
-                <a href="https://twitter.com/kumar_abhirup" target="_blank" rel="noopener noreferrer">
-                  <span className="px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon" media-simple="true"></span>
-                </a>
-                <a href="https://www.facebook.com/krish.abhirup" target="_blank" rel="noopener noreferrer">
-                  <span className="px-2 mbr-iconfont mbr-iconfont-social socicon-facebook socicon" media-simple="true"></span>
-                </a>
-                <a href="https://github.com/KumarAbhirup" target="_blank" rel="noopener noreferrer">
-                  <span className="px-2 mbr-iconfont mbr-iconfont-social mbrib-github" media-simple="true"></span>
-                </a>
-                <a href="https://www.youtube.com/c/IQubex" target="_blank" rel="noopener noreferrer">
-                  <span className="px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon" media-simple="true"></span>
-                </a>
-                <a href="https://www.linkedin.com/in/kumar-abhirup/" target="_blank" rel="noopener noreferrer">
-                  <span className="px-2 mbr-iconfont mbr-iconfont-social socicon-linkedin socicon" media-simple="true"></span>
-                </a>
+                { socialLinks.icons.map(icon => (
+                  <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                    <span className={`px-2 mbr-iconfont mbr-iconfont-social socicon-${icon.icon} socicon`} media-simple="true"></span>
+                  </a>
+                )) }
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import React from 'react' // For making JSX work 😆
-import { socialLinks, navBar } from '../api'
+
+import { navBar } from '../api/navBar'
+import { socialLinks } from '../api/socialLinks'
 
 const { logo } = navBar
 

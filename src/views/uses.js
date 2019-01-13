@@ -16,7 +16,6 @@ export default class usesPage extends Component {
         <Faq />
         <Banner/>
         <Contact />
-        <Footer />
       </>
     )
   }

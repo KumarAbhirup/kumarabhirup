@@ -19,12 +19,13 @@ export const contact = {
       Hey, I'm <strong>Kumar Abhirup</strong>. Visit the <a href="https://www.kumarabhirup.com">homepage</a> to know more about me. 😃
     </>
   ),
-  submitText: `SEND MESSAGE`,
-  map: `https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik`,
+  submitText: `THIS FORM IS YET UNDER CONSTRUCTION 😉`, // `SEND MESSAGE`,
+  map: "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik",
   placeholders: {
     name: `Your good name 😃`,
     phone: `Phone with ISD`,
     email: `Your REAL email 😠`,
     message: `Write in brief...`
-  }
+  },
+  disabled: true
 }

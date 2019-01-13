@@ -1,4 +1,4 @@
-import { meta } from '../api'
+import { meta } from '../api/meta'
 
 export const title = {
   uses: `Things I use 🦄`,
@@ -61,3 +61,6 @@ export const homeButtons = {
     link: `portfolio`
   },
 }
+
+export const arrowIcon = `mbrib-down`
+export const landingPageMarginTop = {marginTop: -100}

@@ -24,7 +24,6 @@ export default class homePage extends Component {
         <Banner />
         <Contact />
         <Activities />
-        <Footer />
       </>
     )
   }
