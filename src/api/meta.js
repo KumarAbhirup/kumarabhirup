@@ -1,7 +1,10 @@
 import React from 'react'
-
-import { meta as constMeta } from './meta'
 import { navBar } from './navBar'
+
+require('dotenv').config();
+
+export const stage = "DEV"
+export const devURL = "http://localhost:3000"
 
 export const meta = {
   name: 'Kumar Abhirup',
@@ -11,5 +14,5 @@ export const meta = {
   image: navBar.logo,
   favicon: `${process.env.PUBLIC_URL}/favicon.ico`,
   email: `hey@kumarabhirup.com`,
-  domain: 'https://kumarabhirup.com' // process.env.STAGE === 'PRODUCTION' ? 'kumarabhirup.com' : '/'
+  domain: stage === "PROD" ? 'https://kumarabhirup.com' : devURL
 }

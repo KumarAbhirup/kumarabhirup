@@ -35,11 +35,13 @@ export default class PageLanding extends Component {
                   </div>
           </div>
 
+        { arrowTakesHere && (
           <div className="mbr-arrow hidden-sm-down" aria-hidden="true">
-              <Link to={arrowTakesHere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesHere}`}>
-                  <i className={`${arrowIcon} mbr-iconfont`}></i>
-              </Link>
+                <Link to={arrowTakesHere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesHere}`}>
+                    <i className={`${arrowIcon} mbr-iconfont`}></i>
+                </Link>
           </div>
+        ) }
       </section>
     )
   }

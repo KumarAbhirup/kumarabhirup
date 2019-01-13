@@ -30,7 +30,7 @@ export const iconsAndLabels = {
 
 export const arrowTakesWhere = {
   uses: "uses",
-  page404: null,
+  page404: "404", // null,
   portfolio: "portfolio",
   home: "about"
 }

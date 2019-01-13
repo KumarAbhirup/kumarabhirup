@@ -3,8 +3,8 @@ import React from 'react' // For making JSX work 😆
 export const navBar = {
   logo: `${process.env.PUBLIC_URL}/prebuilt/images/kumar-1024x1024.jpg`,
   menu: [
-    { name: 'home', link: '/' },
-    { name: 'portfolio', link: '/portfolio' },
+    { name: 'home', link: `/` },
+    { name: 'portfolio', link: `/portfolio` },
   ],
   specialButton: (
     <div className="navbar-buttons mbr-section-btn">

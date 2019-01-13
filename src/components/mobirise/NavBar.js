@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { meta } from '../../api/meta'
 import { navBar } from '../../api/navBar'
-import toCamelCase from '../../lib/toCamelCase';
+import toCapitalCase from '../../lib/toCapitalCase';
 
 export default class NavBar extends Component {
 
@@ -32,7 +32,7 @@ export default class NavBar extends Component {
                 <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     { navBar.menu.map(item => (
                         <li className="nav-item">
-                            <a className="nav-link link text-black display-4" href={item.link}>{ toCamelCase(item.name) }</a>
+                            <a className="nav-link link text-black display-4" href={`${meta.domain}${item.link}`}>{ toCapitalCase(item.name) }</a>
                         </li>
                     )) }
                 </ul>
