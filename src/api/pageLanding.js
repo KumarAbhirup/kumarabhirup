@@ -1,9 +1,10 @@
+import React from 'react'
 import { meta } from '../api/meta'
 
 export const title = {
-  uses: `Things I use 🦄`,
-  page404: `Error 404 💩`,
-  portfolio: `Projects 🦄`
+  uses: (<><br />Things I use 🦄</>),
+  page404: (<><br />Error 404 💩</>),
+  portfolio: (<><br />Projects 🦄</>)
 }
 
 export const iconsAndLabels = {
@@ -63,4 +64,4 @@ export const homeButtons = {
 }
 
 export const arrowIcon = `mbrib-down`
-export const landingPageMarginTop = {marginTop: -100}
+export const homePageMarginTop = {marginTop: -100}

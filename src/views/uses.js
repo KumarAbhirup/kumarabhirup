@@ -5,14 +5,15 @@ import PageLanding from '../components/mobirise/PageLanding';
 import Faq from '../components/mobirise/FAQ';
 import Banner from '../components/mobirise/Banner';
 import Contact from '../components/mobirise/Contact';
-import Footer from '../components/mobirise/Footer';
+
+import { title, iconsAndLabels, arrowTakesWhere, button } from '../api/pageLanding'
 
 export default class usesPage extends Component {
   render() {
     return (
       <>
         <NavBar />
-        <PageLanding />
+        <PageLanding title={title.uses} iconsAndLabels={iconsAndLabels.uses} arrowTakesHere={arrowTakesWhere.uses} button={button.all} />
         <Faq />
         <Banner/>
         <Contact />

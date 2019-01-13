@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 
 import { meta } from '../../api/meta'
-import { homeButtons, arrowTakesWhere, arrowIcon, landingPageMarginTop } from '../../api/pageLanding'
+import { homeButtons, arrowTakesWhere, arrowIcon, homePageMarginTop } from '../../api/pageLanding'
 
 export default class HomepageParallax extends Component {
   render() {
     return (
       <section className="cid-qAL8Ff2P8u mbr-fullscreen mbr-parallax-background" id="header2-f" data-rv-view="225">
         <div className="mbr-overlay" style={{ opacity: 0.7, backgroundColor: "rgb(35, 35, 35)" }}></div>
-        <div className="container align-center" style={landingPageMarginTop}>
+        <div className="container align-center" style={homePageMarginTop}>
           <div className="row justify-content-md-center">
             <div className="mbr-white col-md-10">
               <h1 className="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">{ meta.name.toUpperCase() }</h1>
