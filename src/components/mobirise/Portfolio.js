@@ -39,11 +39,11 @@ class Portfolio extends Component {
 
   handleMoreClick = (event) => {
     event.preventDefault()
-    this.props.history.push('/projects')
+    this.props.history.replace('/portfolio')
   }
 
   render() {
-    const first3Projects = portfolio.portfolio.filter((item, index) => index < 3)
+    const projectsToShow = portfolio.portfolio.filter((item, index) => index < portfolio.projectsAtHomepage)
     return (
         <Element name="portfolio">
             <section className="features13 cid-reFlzoEQMR" id="features13-s" data-rv-view="237">
@@ -52,7 +52,7 @@ class Portfolio extends Component {
                         <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2">{ portfolio.title }</h2>
 
                         <div className="media-container-row container">
-                            {first3Projects.map(project => (
+                            {projectsToShow.map(project => (
                                 <PortfolioCard className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
                                     <div className="card-img">
                                         <a href={project.link} target="_blank" rel="noopener noreferrer"><img src={project.image} alt={project.title} media-simple="true" /></a>

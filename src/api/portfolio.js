@@ -1,6 +1,4 @@
-export const portfolio = {
-  title: `Portfolio 🍊`,
-  portfolio: [
+const projects = [
     { 
       title: `bulk-mail-cli`,
       description: `A command line interface (cli) application that sends automated and dynamic emails to the list.`,
@@ -18,7 +16,20 @@ export const portfolio = {
       description: `This website itself is a part of my portfolio... It is created in React.JS and uses GraphQL to empower the content.`,
       link: `https://www.github.com/KumarAbhirup/kumarabhirup`,
       image: `${process.env.PUBLIC_URL}/prebuilt/images/background5.jpg`
+    },
+    { 
+      title: `kumarabhirup.com`,
+      description: `This website itself is a part of my portfolio... It is created in React.JS and uses GraphQL to empower the content.`,
+      link: `https://www.github.com/KumarAbhirup/kumarabhirup`,
+      image: `${process.env.PUBLIC_URL}/prebuilt/images/background5.jpg`
     }
-  ],
-  moreButtonText: null // `Wanna see more of my projects? ☕`
+]
+
+const projectsAtHomepage = 3
+
+export const portfolio = {
+  title: `Portfolio 🍊`,
+  portfolio: projects,
+  moreButtonText: projects.length > projectsAtHomepage ? `Wanna see more of my projects? ☕` : null,
+  projectsAtHomepage
 }
