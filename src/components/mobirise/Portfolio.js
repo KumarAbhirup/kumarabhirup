@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Element } from 'react-scroll'
+import { withRouter } from 'react-router-dom';
+
+import { portfolio } from '../../api/portfolio';
 
 const BigButton = styled.button`
     display: block;
@@ -24,54 +27,42 @@ const BigButton = styled.button`
     }
 `
 
-export default class Portfolio extends Component {
+const PortfolioCard = styled.div`
+    &:hover {
+        transition: all .5s;
+        box-shadow: 0 0 10px #000;
+        cursor: pointer;
+    }
+`
 
-  images = {
-    1: `${process.env.PUBLIC_URL}/prebuilt/images/jumbotron.jpg`,
-    2: `${process.env.PUBLIC_URL}/prebuilt/images/mbr-774x1080.jpg`,
-    3: `${process.env.PUBLIC_URL}/prebuilt/images/background5.jpg`
+class Portfolio extends Component {
+
+  handleMoreClick = (event) => {
+    event.preventDefault()
+    this.props.history.push('/projects')
   }
 
   render() {
+    const first3Projects = portfolio.portfolio.filter((item, index) => index < 3)
     return (
         <Element name="portfolio">
             <section className="features13 cid-reFlzoEQMR" id="features13-s" data-rv-view="237">
                     <div className="container">
                         {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-                        <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2">
-                            Portfolio 🍊</h2>
+                        <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2">{ portfolio.title }</h2>
 
                         <div className="media-container-row container">
-                            <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                                <div className="card-img">
-                                    <img src={this.images[1]} alt="bulk-mail-cli" media-simple="true" />
-                                </div>
-                                <h4 className="card-title py-2 mbr-fonts-style display-5">
-                                    bulk-mail-cli</h4>
-                                <p className="mbr-text mbr-fonts-style display-7">
-                                    A command line interface (cli) application that sends automated and dynamic emails to the list.</p>
-                            </div>
-                            <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                                <div className="card-img">
-                                    <img src={this.images[2]} alt="iconic-input" media-simple="true" />
-                                </div>
-                                <h4 className="card-title py-2 mbr-fonts-style display-5">
-                                    iconic-input</h4>
-                                <p className="mbr-text mbr-fonts-style display-7">
-                                    A react-native input component library which deals with appealing and attractive input boxes.</p>
-                            </div>
-                            <div className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                                <div className="card-img">
-                                    <img src={this.images[3]} alt="kumarabhirup.com" media-simple="true" />
-                                </div>
-                                <h4 className="card-title py-2 mbr-fonts-style display-5">
-                                    kumarabhirup.com</h4>
-                                <p className="mbr-text mbr-fonts-style display-7">
-                                    This website itself is a part of my portfolio... It is created in React.JS and uses GraphQL to empower the content.</p>
-                            </div>    
+                            {first3Projects.map(project => (
+                                <PortfolioCard className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
+                                    <div className="card-img">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer"><img src={project.image} alt={project.title} media-simple="true" /></a>
+                                    </div>
+                                    <h4 className="card-title py-2 mbr-fonts-style display-5"><a href={project.link} style={{color: "#fff", fontWeight: 700, textDecoration: "underline"}} target="_blank" rel="noopener noreferrer">{ project.title }</a></h4>
+                                    <p className="mbr-text mbr-fonts-style display-7"><a href={project.link} style={{color: "#fff"}} target="_blank" rel="noopener noreferrer">{ project.description }</a></p>
+                                </PortfolioCard>
+                            ))}
                         </div>
-                        {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-                        <BigButton>Wanna see more? ☕</BigButton>
+                        {portfolio.moreButtonText && <BigButton onClick={this.handleMoreClick}>{ portfolio.moreButtonText }</BigButton>}
                 </div>
             </section>
         </Element>
@@ -79,3 +70,5 @@ export default class Portfolio extends Component {
   }
 
 }
+
+export default withRouter(Portfolio)

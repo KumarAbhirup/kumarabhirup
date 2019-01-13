@@ -20,5 +20,5 @@ export const portfolio = {
       image: `${process.env.PUBLIC_URL}/prebuilt/images/background5.jpg`
     }
   ],
-  moreButtonText: `Wanna see more? ☕`
+  moreButtonText: null // `Wanna see more of my projects? ☕`
 }
