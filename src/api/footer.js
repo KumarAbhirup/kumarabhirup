@@ -29,7 +29,7 @@ export const footerContent = {
     }
   ],
   copyright: (
-    <>Why copywriting?? Code is hosted on <a href="https://github.com/KumarAbhirup/kumarabhirup" className="text-success">GitHub</a>&nbsp;😎</>
+    <>No rights reserved. Code is hosted on <a href="https://github.com/KumarAbhirup/kumarabhirup" className="text-success">GitHub</a>&nbsp;😎</>
   ),
   social: socialLinks.icons
 }
