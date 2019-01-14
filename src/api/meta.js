@@ -3,7 +3,7 @@ import { navBar } from './navBar'
 
 require('dotenv').config();
 
-export const stage = "DEV"
+export const stage = "PROD"
 export const devURL = "http://localhost:3000"
 
 export const meta = {
