@@ -16,15 +16,17 @@
     "react-scripts": "2.1.3",
     "react-scroll": "^1.7.10",
     "react-stack-grid": "^0.7.1",
+    "serve": "^10.1.1",
     "styled-components": "^4.1.3"
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "react-scripts start",
+    "start": "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "now-build": "react-scripts build && mv build dist"
+    "now-build": "react-scripts build && mv build dist",
+    "deploy": "npm run build && now ./build --name=kumarabhirup"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +40,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "8.0.4",
+    "webpack-cli": "^3.2.1"
   }
 }
