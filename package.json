@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "react-scripts build && mv build dist",
-    "deploy": "npm run build && now ./build --name=kumarabhirup"
+    "deploy": "npm run build && now ./build -A ../now.json --public --name=kumarabhirup"
   },
   "eslintConfig": {
     "extends": "react-app"
