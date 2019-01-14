@@ -15,8 +15,8 @@ export default class HomepageParallax extends Component {
               <h1 className="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">{ meta.name.toUpperCase() }</h1>
               <p className="mbr-text pb-3 mbr-fonts-style display-5">{ meta.tagline }</p>
               <div className="mbr-section-btn">
-                <Link to={homeButtons[1].link} spy smooth duration={1000} offset={-50} className={`btn btn-md ${homeButtons[1].class} display-4`} href={`#${homeButtons[1].link}`}><span className={`${homeButtons[1].icon} mbr-iconfont mbr-iconfont-btn`}></span>{homeButtons[1].text}</Link>
-                <Link to={homeButtons[2].link} spy smooth duration={1000} offset={-50} className={`btn btn-md ${homeButtons[2].class} display-4`} href={`#${homeButtons[2].link}`}><span className={`${homeButtons[2].icon} mbr-iconfont mbr-iconfont-btn`}></span>{homeButtons[2].text}</Link>
+                <Link to={homeButtons[1].link} spy smooth duration={1000} offset={homeButtons[1].linkOffset} className={`btn btn-md ${homeButtons[1].class} display-4`} href={`#${homeButtons[1].link}`}><span className={`${homeButtons[1].icon} mbr-iconfont mbr-iconfont-btn`}></span>{homeButtons[1].text}</Link>
+                <Link to={homeButtons[2].link} spy smooth duration={1000} offset={homeButtons[2].linkOffset} className={`btn btn-md ${homeButtons[2].class} display-4`} href={`#${homeButtons[2].link}`}><span className={`${homeButtons[2].icon} mbr-iconfont mbr-iconfont-btn`}></span>{homeButtons[2].text}</Link>
               </div>
             </div>
           </div>

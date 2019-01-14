@@ -1,15 +1,17 @@
 import React from 'react'
+import getAge from 'get-age'
+
 import { meta } from '../api/meta'
 
 export const whoAmI = {
   title: `👁️‍🗨️ Who am I?`,
-  text: `I develop web apps, simple command line tools, and everything I feel could look fascinating! ☕`,
+  text: `I develop web apps, simple command line tools and mobile apps ☕`,
   questions: [
     {
-      question: ` Am I not too young to code? 🖥️`,
+      question: ` Why do I code at the age of ${getAge('2003-11-13')}? 🖥️`,
       answer: (
         <>
-          I started learning web development since I was 12.<br /> I have never looked back then... 🙂 &nbsp;I'm 15 by now.<br />I love building and shipping stuffs. It's my hobby.
+          I started learning web development when I was 12.<br /> I have never looked back since then... 🙂<br />I love building and shipping stuffs. It's my hobby.<br />Here's <a href={`${meta.domain}/portfolio`}>what I shipped till date!</a>
         </>
       )
     },
@@ -17,7 +19,7 @@ export const whoAmI = {
       question: ` What are your everyday tools? 🤔`,
       answer: (
         <>
-          Visit <a href="https://kumarabhirup.com/uses">kumarabhirup.com/uses</a>&nbsp;to get an insight of what dev tools, browser, terminal, apps and softwares I use.
+          Visit <a href={`${meta.domain}/uses`}>kumarabhirup.com/uses</a>&nbsp;to get an insight of what dev tools, browser, terminal, apps and softwares I use.
         </>
       )
     },
@@ -25,7 +27,7 @@ export const whoAmI = {
       question: ` What have I built till date? 🚀`,
       answer: (
         <>
-          Visit <a href="https://www.kumarabhirup.com/projects">kumarabhirup.com/projects</a> to check out my porfolio.&nbsp;😄
+          Visit <a href={`${meta.domain}/portfolio`}>kumarabhirup.com/portfolio</a> to check out all my projects.&nbsp;😄
         </>
       )
     },
@@ -33,7 +35,7 @@ export const whoAmI = {
       question: ` My story 🏮`,
       answer: (
         <>
-          My story has been published at many places but the one I like is <a href="https://heropress.com/essays/life-designed-wordpress/" target="_blank" rel="noopener noreferrer">here</a>.
+          I started out my coding journey with WordPress 🤟🏻 Here's <a href="https://heropress.com/essays/life-designed-wordpress/" target="_blank" rel="noopener noreferrer">my story</a> published on HeroPress. It's kinda old now, but I'll write another soon enough. 😅
         </>
       )
     }

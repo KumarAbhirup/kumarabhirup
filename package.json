@@ -2,8 +2,13 @@
   "name": "kumarabhirup",
   "version": "0.0.1",
   "private": true,
+  "alias": [
+    "kumarabhirup",
+    "kumarup"
+  ],
   "dependencies": {
     "dotenv": "^6.2.0",
+    "get-age": "^1.0.1",
     "react": "^16.7.0",
     "react-circular-progressbar": "^1.0.0",
     "react-dom": "^16.7.0",

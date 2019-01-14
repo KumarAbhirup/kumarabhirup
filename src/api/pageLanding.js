@@ -2,9 +2,9 @@ import React from 'react'
 import { meta } from '../api/meta'
 
 export const title = {
-  uses: (<><br />Things I use 🦄</>),
-  page404: (<><br />Error 404 💩</>),
-  portfolio: (<><br />Projects 🦄</>)
+  uses: (<><br />🦄 Things I use</>),
+  page404: (<><br />💩 Error 404</>),
+  portfolio: (<><br />🖼️ My Portfolio</>)
 }
 
 export const iconsAndLabels = {
@@ -53,13 +53,15 @@ export const homeButtons = {
     class: `btn-secondary`,
     icon: `mbri-rocket`,
     text: `ABOUT ME`,
-    link: `about`
+    link: `about`,
+    linkOffset: -50
   },
   2: {
     class: `btn-white-outline`,
     icon: `mbri-devices`,
     text: `PORTFOLIO`,
-    link: `portfolio`
+    link: `portfolio`,
+    linkOffset: 140
   },
 }
 

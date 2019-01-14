@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Element } from 'react-scroll'
+import StackGrid from "react-stack-grid";
 import { withRouter } from 'react-router-dom';
 
 import { portfolio } from '../../api/portfolio';
@@ -16,8 +17,10 @@ const BigButton = styled.button`
     margin: 30px auto;
     font-size: 16px;
     font-weight: bold;
+    background: transparent;
     cursor: pointer;
     transition: all 0.5s;
+    margin-top: 100px;
     &:hover {
         background: black;
         color: white;
@@ -28,10 +31,9 @@ const BigButton = styled.button`
 `
 
 const PortfolioCard = styled.div`
-    &:hover {
-        transition: all .5s;
-        box-shadow: 0 0 10px #000;
-        cursor: pointer;
+    border: 5px solid #f2efef; /*#FAFAFA;*/
+    .card-box {
+        background: #f2efef; /*#FAFAFA;*/
     }
 `
 
@@ -46,22 +48,39 @@ class Portfolio extends Component {
     const projectsToShow = portfolio.portfolio.filter((item, index) => index < portfolio.projectsAtHomepage)
     return (
         <Element name="portfolio">
-            <section className="features13 cid-reFlzoEQMR" id="features13-s" data-rv-view="237">
+            <section className="features13 features3 cid-reFWtuV64z" id="features13-s" data-rv-view="237" style={{background: "#fff"}}>
                     <div className="container">
                         {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-                        <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2">{ portfolio.title }</h2>
+                        <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2" style={{alignSelf: "center", textAlign: "center"}}>{ portfolio.title }</h2>
 
-                        <div className="media-container-row container">
-                            {projectsToShow.map(project => (
-                                <PortfolioCard className="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                                    <div className="card-img">
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer"><img src={project.image} alt={project.title} media-simple="true" /></a>
-                                    </div>
-                                    <h4 className="card-title py-2 mbr-fonts-style display-5"><a href={project.link} style={{color: "#fff", fontWeight: 700, textDecoration: "underline"}} target="_blank" rel="noopener noreferrer">{ project.title }</a></h4>
-                                    <p className="mbr-text mbr-fonts-style display-7"><a href={project.link} style={{color: "#fff"}} target="_blank" rel="noopener noreferrer">{ project.description }</a></p>
-                                </PortfolioCard>
-                            ))}
-                        </div>
+                        <StackGrid
+                            columnWidth={350}
+                            gutterHeight={20}
+                            gutterWidth={20}
+                            monitorImagesLoaded
+                        >
+                            {/* <div className="media-container-row container"> */}
+                                {projectsToShow.map(project => (
+                                    <PortfolioCard className="card">
+                                        <div className="card-wrapper">
+                                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                                <div className="card-img">
+                                                    <img src={project.image} alt={project.title} media-simple="true" />
+                                                </div>
+                                            </a>
+                                            <div className="card-box">
+                                                <h4 className="card-title pb-3 mbr-fonts-style display-7">
+                                                    <a href={project.link} target="_blank" rel="noopener noreferrer" style={{color: "#000", fontWeight: 700}}>{ project.title }</a>
+                                                </h4>
+                                                <p className="mbr-text mbr-fonts-style display-7">
+                                                    { project.description }
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </PortfolioCard>
+                                ))}
+                            {/* </div> */}
+                        </StackGrid>
                         {portfolio.moreButtonText && <BigButton onClick={this.handleMoreClick}>{ portfolio.moreButtonText }</BigButton>}
                 </div>
             </section>
