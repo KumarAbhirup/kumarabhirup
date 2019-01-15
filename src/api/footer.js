@@ -18,7 +18,7 @@ export const footerContent = {
     {
       title: `Mail me here ✉️`,
       body: (
-        <><a href="mailto:hey@kumarabhirup.com" className="text-success">hey@kumarabhirup.com</a><br />I typically reply within a day.<br /></>
+        <><a href="mailto:kumarabhirup5@gmail.com" className="text-success">kumarabhirup5@gmail.com</a><br /><a href="mailto:kumar@iqubex.com" className="text-success">kumar@iqubex.com</a><br />I typically reply within a day.<br /></>
       )
     },
     {

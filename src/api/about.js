@@ -19,7 +19,7 @@ export const whoAmI = {
       question: ` What are your everyday tools? 🤔`,
       answer: (
         <>
-          Visit <a href={`${meta.domain}/uses`}>kumarabhirup.com/uses</a>&nbsp;to get an insight of what dev tools, browser, terminal, apps and softwares I use.
+          Visit <a href={`${meta.domain}/uses`}>kumar.now.sh/uses</a>&nbsp;to get an insight of what dev tools, browser, terminal, apps and softwares I use.
         </>
       )
     },
@@ -27,7 +27,7 @@ export const whoAmI = {
       question: ` What have I built till date? 🚀`,
       answer: (
         <>
-          Visit <a href={`${meta.domain}/portfolio`}>kumarabhirup.com/portfolio</a> to check out all my projects.&nbsp;😄
+          Visit <a href={`${meta.domain}/portfolio`}>kumar.now.sh/portfolio</a> to check out all my projects.&nbsp;😄
         </>
       )
     },

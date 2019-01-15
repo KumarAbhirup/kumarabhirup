@@ -14,5 +14,5 @@ export const meta = {
   image: navBar.logo,
   favicon: `${process.env.PUBLIC_URL}/favicon.ico`,
   email: `hey@kumarabhirup.com`,
-  domain: stage === "PROD" ? 'https://kumarabhirup.com' : devURL
+  domain: stage === "PROD" ? 'https://kumar.now.sh' : devURL
 }
