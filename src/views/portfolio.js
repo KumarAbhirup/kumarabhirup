@@ -7,16 +7,20 @@ import Banner from '../components/mobirise/Banner';
 import Contact from '../components/mobirise/Contact';
 
 import { portfolioLandingPage } from '../api/pageLanding'
+import { navBar } from '../api/navBar'
+import { banner } from '../api/banner'
+import { contactSection } from '../api/others'
+import { portfolio } from '../api/portfolio'
 
 export default class portfolioPage extends Component {
   render() {
     return (
       <>
-        <NavBar />
+        <NavBar data={navBar} />
         <PageLanding {...portfolioLandingPage} />
-        <PortfolioExtended />
-        <Banner/>
-        <Contact />
+        <PortfolioExtended data={portfolio} />
+        <Banner data={banner} />
+        <Contact data={contactSection} />
       </>
     )
   }

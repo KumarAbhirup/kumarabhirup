@@ -1,6 +1,27 @@
 import React from 'react'
 import { meta } from '../api/meta'
 
+export const homeLandingPage = {
+  buttons: {
+    1: {
+      class: `btn-secondary`,
+      icon: `mbri-rocket`,
+      text: `ABOUT ME`,
+      link: `about`,
+      linkOffset: -50
+    },
+    2: {
+      class: `btn-white-outline`,
+      icon: `mbri-devices`,
+      text: `PORTFOLIO`,
+      link: `portfolio`,
+      linkOffset: 140
+    }
+  },
+  arrowTakesWhere: "about",
+  marginTop: {marginTop: -100}
+}
+
 export const portfolioLandingPage = {
   title: (<><br />🖼️ My Portfolio</>),
   button: {

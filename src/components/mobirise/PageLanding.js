@@ -5,7 +5,7 @@ import { arrowIcon } from '../../api/pageLanding';
 
 export default class PageLanding extends Component {
   render() {
-    const { title, iconsAndLabels, arrowTakesHere, button } = this.props
+    const { title, iconsAndLabels, arrowTakesWhere, button } = this.props
     return (
       <section className="header12 cid-reFvVotcRe mbr-fullscreen mbr-parallax-background" id="header12-x" data-rv-view="254">
           <div className="mbr-overlay" style={{opacity: 0.6, backgroundColor: "rgb(0, 0, 0)"}}>
@@ -35,9 +35,9 @@ export default class PageLanding extends Component {
                   </div>
           </div>
 
-        { arrowTakesHere && (
+        { arrowTakesWhere && (
           <div className="mbr-arrow hidden-sm-down" aria-hidden="true">
-                <Link to={arrowTakesHere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesHere}`}>
+                <Link to={arrowTakesWhere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesWhere}`}>
                     <i className={`${arrowIcon} mbr-iconfont`}></i>
                 </Link>
           </div>
