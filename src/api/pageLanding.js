@@ -1,51 +1,56 @@
 import React from 'react'
 import { meta } from '../api/meta'
 
-export const title = {
-  uses: (<><br />🦄 Things I use</>),
-  page404: (<><br />💩 Error 404</>),
-  portfolio: (<><br />🖼️ My Portfolio</>)
+export const portfolioLandingPage = {
+  title: (<><br />🖼️ My Portfolio</>),
+  button: {
+    icon: `mbrib-user`,
+    text: `WHO AM I?`,
+    link: `${meta.domain}#about`
+  },
+  iconsAndLabels: [
+    { icon: `mbri-drag-n-drop2`, label: `Websites` },
+    { icon: `mbri-tablet-vertical`, label: `Apps` },
+    { icon: `mbri-apple`, label: `CLI` },
+    { icon: `mbri-speed`, label: `Libraries` }
+  ],
+  arrowTakesWhere: "portfolio"
 }
 
-export const iconsAndLabels = {
-  uses: [
+export const usesLandingPage = {
+  title: (<><br />🦄 Things I use</>),
+  button: {
+    icon: `mbrib-user`,
+    text: `WHO AM I?`,
+    link: `${meta.domain}#about`
+  },
+  iconsAndLabels: [
     { icon: `mbri-wifi`, label: `Editing` },
     { icon: `mbri-devices`, label: `Hardware` },
     { icon: `mbri-laptop`, label: `Coding` },
     { icon: `mbri-speed`, label: `Other` }
   ],
-  page404: [
+  arrowTakesWhere: "uses"
+}
+
+export const page404LandingPage = {
+  title: (<><br />💩 Error 404</>),
+  button: {
+    icon: `mbrib-smile-face`,
+    text: `VISIT HOMEPAGE`,
+    link: `${meta.domain}`
+  },
+  iconsAndLabels: [
     { icon: `mbri-drag-n-drop2`, label: `Websites` },
     { icon: `mbri-tablet-vertical`, label: `Apps` },
     { icon: `mbri-apple`, label: `CLI` },
     { icon: `mbri-speed`, label: `Libraries` }
   ],
-  portfolio: [
-    { icon: `mbri-drag-n-drop2`, label: `Websites` },
-    { icon: `mbri-tablet-vertical`, label: `Apps` },
-    { icon: `mbri-apple`, label: `CLI` },
-    { icon: `mbri-speed`, label: `Libraries` }
-  ]
+  arrowTakesWhere: "404"
 }
 
 export const arrowTakesWhere = {
-  uses: "uses",
-  page404: "404", // null,
-  portfolio: "portfolio",
   home: "about"
-}
-
-export const button = {
-  all: {
-    icon: `mbrib-user`,
-    text: `WHO AM I?`,
-    link: `${meta.domain}#about`
-  },
-  page404: {
-    icon: `mbrib-smile-face`,
-    text: `VISIT HOMEPAGE`,
-    link: `${meta.domain}`
-  }
 }
 
 export const homeButtons = {
@@ -62,7 +67,7 @@ export const homeButtons = {
     text: `PORTFOLIO`,
     link: `portfolio`,
     linkOffset: 140
-  },
+  }
 }
 
 export const arrowIcon = `mbrib-down`

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const page404 = {
+export const page404Text = {
   title: `You seem to exist at a wrong place...`,
   body: (
     <>
@@ -9,7 +9,7 @@ export const page404 = {
   )
 }
 
-export const contact = {
+export const contactSection = {
   title: `👋🏻 Drop me a message`,
   icon: `mbri-speed`,
   iconText: `Instant reply`,
