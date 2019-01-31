@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 
+import { homeLandingPage } from '../api/pageLanding';
+import { activities } from '../api/activities';
+import { contactSection } from '../api/others';
+import { banner } from '../api/banner';
+import { portfolio } from '../api/portfolio';
+import { skills } from '../api/skills';
+import { socialLinks } from '../api/socialLinks';
+import { aboutMe } from '../api/about';
+
 import HomepageParallax from '../components/mobirise/HomepageParallax';
-import WhoAmI from '../components/mobirise/WhoAmI';
+import About from '../components/mobirise/About';
 import SocialLinks from '../components/mobirise/SocialLinks';
 import Skills from '../components/mobirise/Skills';
 import Portfolio from '../components/mobirise/Portfolio';
@@ -13,14 +22,14 @@ export default class homePage extends Component {
   render() {
     return (
       <>
-        <HomepageParallax />
-        <WhoAmI />
-        <SocialLinks />
-        <Skills />
-        <Portfolio />
-        <Banner />
-        <Contact />
-        <Activities />
+        <HomepageParallax {...homeLandingPage} />
+        <About data={aboutMe} />
+        <SocialLinks data={socialLinks} />
+        <Skills data={skills} />
+        <Portfolio data={portfolio} />
+        <Banner data={banner} />
+        <Contact data={contactSection} />
+        <Activities data={activities} />
       </>
     )
   }

@@ -3,7 +3,7 @@ import getAge from 'get-age'
 
 import { meta } from '../api/meta'
 
-export const whoAmI = {
+export const aboutMe = {
   title: `👁️‍🗨️ Who am I?`,
   text: `I develop web apps, simple command line tools and mobile apps ☕`,
   questions: [

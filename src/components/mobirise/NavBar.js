@@ -7,6 +7,7 @@ import toCapitalCase from '../../lib/toCapitalCase';
 export default class NavBar extends Component {
 
   render() {
+    const { data } = this.props
     return (
       <section className="menu cid-reFueG3rgB" once="menu" id="menu2-v" data-rv-view="252">
         <nav className="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
@@ -22,7 +23,7 @@ export default class NavBar extends Component {
                 <div className="navbar-brand">
                     <span className="navbar-logo">
                         <a href={meta.domain}>
-                            <img src={navBar.logo} alt={meta.name} title={meta.name} media-simple="true" style={{height: "5.1rem"}} />
+                            <img src={data.logo} alt={meta.name} title={meta.name} media-simple="true" style={{height: "5.1rem"}} />
                         </a>
                     </span>
                     <span className="navbar-caption-wrap"><a className="navbar-caption text-black display-4" href={meta.domain}>{ meta.name.toUpperCase() }</a></span>
@@ -36,7 +37,7 @@ export default class NavBar extends Component {
                         </li>
                     )) }
                 </ul>
-                { navBar.specialButton }
+                { data.specialButton }
             </div>
         </nav>
       </section>

@@ -6,17 +6,21 @@ import Faq from '../components/mobirise/FAQ';
 import Banner from '../components/mobirise/Banner';
 import Contact from '../components/mobirise/Contact';
 
-import { title, iconsAndLabels, arrowTakesWhere, button } from '../api/pageLanding'
+import { usesLandingPage } from '../api/pageLanding'
+import { navBar } from '../api/navBar'
+import { banner } from '../api/banner'
+import { contactSection } from '../api/others'
+import { uses } from '../api/uses';
 
 export default class usesPage extends Component {
   render() {
     return (
       <>
-        <NavBar />
-        <PageLanding title={title.uses} iconsAndLabels={iconsAndLabels.uses} arrowTakesHere={arrowTakesWhere.uses} button={button.all} />
-        <Faq />
-        <Banner/>
-        <Contact />
+        <NavBar data={navBar} />
+        <PageLanding {...usesLandingPage} />
+        <Faq {...uses} />
+        <Banner data={banner} />
+        <Contact data={contactSection} />
       </>
     )
   }
