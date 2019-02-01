@@ -31,8 +31,8 @@ export default class NavBar extends Component {
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                    { navBar.menu.map(item => (
-                        <li className="nav-item">
+                    { navBar.menu.map((item, index) => (
+                        <li key={index} className="nav-item">
                             <a className="nav-link link text-black display-4" href={`${meta.domain}${item.link}`}>{ toCapitalCase(item.name) }</a>
                         </li>
                     )) }

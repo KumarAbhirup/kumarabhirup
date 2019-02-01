@@ -59,8 +59,8 @@ class Portfolio extends Component {
                             monitorImagesLoaded
                         >
                             {/* <div className="media-container-row container"> */}
-                                {projectsToShow.map(project => (
-                                    <PortfolioCard className="card">
+                                {projectsToShow.map((project, index) => (
+                                    <PortfolioCard key={index} className="card">
                                         <div className="card-wrapper">
                                             <a href={project.link} target="_blank" rel="noopener noreferrer">
                                                 <div className="card-img">

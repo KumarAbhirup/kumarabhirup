@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 
+const SocialLink = props => (
+  <a href={props.icon.link} target="_blank" rel="noopener noreferrer">
+    <span className={`px-2 mbr-iconfont mbr-iconfont-social socicon-${props.icon.icon} socicon`} media-simple="true"></span>
+  </a>
+)
+
 export default class SocialLinks extends Component {
   render() {
     const { data } = this.props
@@ -11,10 +17,8 @@ export default class SocialLinks extends Component {
             <div className="col-md-8 align-center">
               <h2 className="pb-3 mbr-fonts-style display-2"><strong>{data.title}</strong></h2>
               <div className="social-list pl-0 mb-0">
-                { data.icons.map(icon => (
-                  <a href={icon.link} target="_blank" rel="noopener noreferrer">
-                    <span className={`px-2 mbr-iconfont mbr-iconfont-social socicon-${icon.icon} socicon`} media-simple="true"></span>
-                  </a>
+                { data.icons.map((icon, index) => (
+                  <SocialLink key={index} icon={icon} />
                 )) }
               </div>
             </div>

@@ -18,7 +18,7 @@ export default class Faq extends Component {
                           <div id="bootstrap-toggle" className="toggle-panel accordionStyles tab-content">
 
                               { questions.map((question, index) => (
-                                 <div className="card">
+                                 <div key={index} className="card">
                                     <div className="card-header" role="tab" id="headingOne">
                                         <a role="button" className="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
                                             <h4 className="mbr-fonts-style display-5"><span className="sign mbr-iconfont mbri-arrow-down inactive"></span>{ question.title }</h4>

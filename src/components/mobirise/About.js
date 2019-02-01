@@ -18,7 +18,7 @@ export default class About extends Component {
                                 {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
                                 <h3 className="mbr-section-subtitle align-left mbr-fonts-style display-5">{ data.text }</h3>
                                 <div id="bootstrap-toggle" className="toggle-panel accordionStyles tab-content pt-5 mt-2">
-                                    { data.questions.map((question, index) => (<Card details={{question, index}} />)) }
+                                    { data.questions.map((question, index) => (<Card key={index} details={{question, index}} />)) }
                                 </div>
                             </div>
                         <div className="mbr-figure" style={{width: "104%"}}>

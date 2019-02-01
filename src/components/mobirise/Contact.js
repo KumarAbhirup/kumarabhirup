@@ -9,7 +9,7 @@ export default class Contact extends Component {
               <div className="row">
                   <div className="col-md-6">
                       { /* MAP IS NOT YET CONNECTED TO API! */ }
-                      <div className="google-map"><iframe frameborder="0" style={{border:0}} src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik" allowfullscreen=""></iframe></div>
+                      <div className="google-map"><iframe title="Google Maps" frameBorder="0" style={{border:0}} src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik" allowFullScreen=""></iframe></div>
                   </div>
                   <div className="col-md-6">
                       {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}

@@ -17,8 +17,8 @@ export default class PortfolioExtended extends Component {
                     monitorImagesLoaded
                 >
                 {/* <div className="media-container-row"> */}
-                    { data.portfolio.map(project => (
-                        <div className="card">
+                    { data.portfolio.map((project, index) => (
+                        <div key={index} className="card">
                             <div className="card-wrapper">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                                     <div className="card-img">

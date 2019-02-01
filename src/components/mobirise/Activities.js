@@ -15,7 +15,7 @@ export default class Activities extends Component {
                         const separLine = data.activities.length !== (index + 1) ? "separline" : null
                         const reverse = index === 0 || index%2 === 0 ? "reverse" : null
                         return (
-                            <div className={`row timeline-element ${reverse} ${separLine}`}>
+                            <div key={index} className={`row timeline-element ${reverse} ${separLine}`}>
                                 <div className="timeline-date-panel col-xs-12 col-md-6  align-left">
                                     <div className="time-line-date-content">
                                         <p className="mbr-timeline-date mbr-fonts-style display-5">{ activity.timestamp }</p>
