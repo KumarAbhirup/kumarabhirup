@@ -33,6 +33,16 @@ const Meta = () => (
       <link rel="stylesheet" href="/static/prebuilt/mobirise/css/mbr-additional.css" type="text/css" />
       <link rel="stylesheet" href="/static/styles/CircularProgressBar.css" type="text/css" />
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80291721-6"></script>
+      <script>
+        {
+          `window.dataLayer = window.dataLayer || []
+          function gtag() {dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'UA-80291721-6');`
+        }
+      </script>
+
     </Head>
 )
 
