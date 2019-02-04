@@ -1,7 +1,7 @@
 import React from 'react'
 import { navBar } from './navBar'
 
-export const stage = "DEV"
+export const stage = "PROD"
 export const devURL = "http://localhost:3006"
 
 export const meta = {
