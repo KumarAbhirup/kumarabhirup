@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { meta } from '../api/meta'
+
 const Meta = () => (
     <Head>
 
@@ -7,12 +9,16 @@ const Meta = () => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
-      <meta name="description" content="" />
+
+      <meta name="og:title" property="og:title" content={meta.meta_ogTitle} />
+      <meta name="description" content={meta.meta_description} />
+      <meta name="author" content={meta.name} />
+      <meta name="robots" content="index, follow" />
 
       <link rel="shortcut icon" href="/static/favicon.ico" />
       <link rel="manifest" href="/static/manifest.json" />
         
-      <title>{ "Kumar Abhirup" }</title>
+      <title>{ meta.title }</title>
 
       <link rel="stylesheet" href="/static/prebuilt/web/assets/mobirise-icons-bold/mobirise-icons-bold.css" />
       <link rel="stylesheet" href="/static/prebuilt/web/assets/mobirise-icons/mobirise-icons.css" />

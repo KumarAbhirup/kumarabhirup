@@ -2,32 +2,32 @@ const projects = [
     { 
       title: `bulk-mail-cli`,
       description: `A command line interface (cli) application that sends automated and dynamic emails to the list.`,
-      link: `https://www.github.com/KumarAbhirup/bulk-mail-cli`,
-      image: `${process.env.PUBLIC_URL}/prebuilt/images/bulkmail.gif`
+      link: `https://bulkmail.now.sh`,
+      image: `/static/prebuilt/images/bulkmail.gif`
     },
     { 
       title: `kumarabhirup.com`,
       description: `This website itself is a part of my portfolio... It is created in React.JS and uses GraphQL to empower the content.`,
       link: `https://www.github.com/KumarAbhirup/kumarabhirup`,
-      image: `${process.env.PUBLIC_URL}/prebuilt/images/kumarabhirupwebsite.jpg`
+      image: `/static/prebuilt/images/kumarabhirupwebsite.jpg`
     },
     { 
       title: `Glitter (twitter bot)`,
       description: `Automate your Twitter. Endlessly.`,
       link: `https://github.com/KumarAbhirup/glitter`,
-      image: `${process.env.PUBLIC_URL}/prebuilt/images/glitterbot.png`
+      image: `/static/prebuilt/images/glitterbot.png`
     },
     { 
       title: `iconic-input`,
       description: `A react-native input component library which deals with appealing and attractive input boxes.`,
       link: `https://www.github.com/KumarAbhirup/iconic-input`,
-      image: `${process.env.PUBLIC_URL}/prebuilt/images/iconic-input.jpg`
+      image: `/static/prebuilt/images/iconic-input.jpg`
     },
     { 
       title: `WP Iconizer`,
       description: `Replace the well-known WordPress icon of the TopLeft into a firey WordPress Icon, or into your OWN!`,
       link: `https://wordpress.org/plugins/iconizer`,
-      image: `${process.env.PUBLIC_URL}/prebuilt/images/iconizer.png`
+      image: `/static/prebuilt/images/iconizer.png`
     },
     { 
       title: `WP Festgreets`,

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import Router from 'next/router'
 import { Element } from 'react-scroll'
-import StackGrid from "react-stack-grid";
+import { Grid } from 'styled-css-grid'
 import styled from 'styled-components'
 
 const BigButton = styled.button`
@@ -32,13 +33,14 @@ const PortfolioCard = styled.div`
     .card-box {
         background: #f2efef; /*#FAFAFA;*/
     }
+    background: #F3EFEF;
 `
 
 class Portfolio extends Component {
 
   handleMoreClick = (event) => {
     event.preventDefault()
-    // this.props.history.replace('/portfolio')
+    Router.push(`/portfolio`).then(() => window.scrollTo(0, 0))
   }
 
   render() {
@@ -51,34 +53,31 @@ class Portfolio extends Component {
                         {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
                         <h2 className="mbr-section-title pb-3 mbr-fonts-style display-2" style={{alignSelf: "center", textAlign: "center"}}>{ data.title }</h2>
 
-                        <StackGrid
-                            columnWidth={350}
-                            gutterHeight={20}
-                            gutterWidth={20}
-                            monitorImagesLoaded
+                        <Grid
+                            columns="repeat(auto-fill, 350px)"
+                            gap="20px"
+                            justifyContent="center" 
                         >
-                            {/* <div className="media-container-row container"> */}
-                                {projectsToShow.map((project, index) => (
-                                    <PortfolioCard key={index} className="card">
-                                        <div className="card-wrapper">
-                                            <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                                <div className="card-img">
-                                                    <img src={project.image} alt={project.title} media-simple="true" />
-                                                </div>
-                                            </a>
-                                            <div className="card-box">
-                                                <h4 className="card-title pb-3 mbr-fonts-style display-7">
-                                                    <a href={project.link} target="_blank" rel="noopener noreferrer" style={{color: "#000", fontWeight: 700}}>{ project.title }</a>
-                                                </h4>
-                                                <p className="mbr-text mbr-fonts-style display-7">
-                                                    { project.description }
-                                                </p>
+                            {projectsToShow.map((project, index) => (
+                                <PortfolioCard key={index} className="card">
+                                    <div className="card-wrapper">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                            <div className="card-img">
+                                                <img src={project.image} alt={project.title} media-simple="true" />
                                             </div>
+                                        </a>
+                                        <div className="card-box">
+                                            <h4 className="card-title pb-3 mbr-fonts-style display-7">
+                                                <a href={project.link} target="_blank" rel="noopener noreferrer" style={{color: "#000", fontWeight: 700}}>{ project.title }</a>
+                                            </h4>
+                                            <p className="mbr-text mbr-fonts-style display-7">
+                                                { project.description }
+                                            </p>
                                         </div>
-                                    </PortfolioCard>
-                                ))}
-                            {/* </div> */}
-                        </StackGrid>
+                                    </div>
+                                </PortfolioCard>
+                            ))}
+                        </Grid>
                         {data.moreButtonText && <BigButton onClick={this.handleMoreClick}>{ data.moreButtonText }</BigButton>}
                 </div>
             </section>

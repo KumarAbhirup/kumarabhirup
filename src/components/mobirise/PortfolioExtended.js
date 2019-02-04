@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import StackGrid from "react-stack-grid";
+import { Grid } from 'styled-css-grid'
 import { Element } from 'react-scroll'
 
 export default class PortfolioExtended extends Component {
@@ -8,17 +8,14 @@ export default class PortfolioExtended extends Component {
     return (
         <Element name="portfolio" id="portfolio">
         <section className="features3 cid-reFWtuV64z" id="features17-1a" data-rv-view="274">
-            {/* <div className="container-fluid" */}
-                <StackGrid
-                    columnWidth={350}
-                    itemComponent={"div"}
-                    gutterHeight={20}
-                    gutterWidth={20}
-                    monitorImagesLoaded
+            <div style={{maxWidth: "1100px", margin: "0px auto", width: "95%"}}>
+                <Grid
+                    columns="repeat(auto-fill, 350px)"
+                    gap="20px"
+                    justifyContent="center" 
                 >
-                {/* <div className="media-container-row"> */}
                     { data.portfolio.map((project, index) => (
-                        <div key={index} className="card">
+                        <div key={index} className="card" style={{background: "#ffffff"}}>
                             <div className="card-wrapper">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                                     <div className="card-img">
@@ -36,9 +33,8 @@ export default class PortfolioExtended extends Component {
                             </div>
                         </div>
                     )) }
-                {/* </div> */}
-                </StackGrid>
-            {/* </div> */}
+                </Grid>
+            </div>
         </section>
         </Element>
     )
