@@ -5,13 +5,13 @@ import { arrowIcon } from '../../api/pageLanding';
 
 export default class PageLanding extends Component {
   render() {
-    const { title, iconsAndLabels, arrowTakesHere, button } = this.props
+    const { title, iconsAndLabels, arrowTakesWhere, button } = this.props
     return (
       <section className="header12 cid-reFvVotcRe mbr-fullscreen mbr-parallax-background" id="header12-x" data-rv-view="254">
           <div className="mbr-overlay" style={{opacity: 0.6, backgroundColor: "rgb(0, 0, 0)"}}>
           </div>
 
-          <div className="container  ">
+          <div className="container">
                   <div className="media-container">
                       <div className="col-md-12 align-center">
                           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
@@ -20,9 +20,10 @@ export default class PageLanding extends Component {
                           <div className="mbr-section-btn align-center py-2"><a className="btn btn-md btn-secondary display-4" href={button.link}><span className={`${button.icon} mbr-iconfont mbr-iconfont-btn`}></span>{ button.text }</a></div>
 
                           <div className="icons-media-container mbr-white">
-                             { iconsAndLabels.map(icon => (
-                                 <div className="card col-12 col-md-6 col-lg-3">
+                             { iconsAndLabels.map((icon, index) => (
+                                 <div key={index} className="card col-12 col-md-6 col-lg-3">
                                     <div className="icon-block">
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a href="#">
                                         <span className={`mbr-iconfont ${icon.icon}`} media-simple="true"></span>
                                     </a>
@@ -35,9 +36,9 @@ export default class PageLanding extends Component {
                   </div>
           </div>
 
-        { arrowTakesHere && (
+        { arrowTakesWhere && (
           <div className="mbr-arrow hidden-sm-down" aria-hidden="true">
-                <Link to={arrowTakesHere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesHere}`}>
+                <Link to={arrowTakesWhere} spy smooth duration={1000} offset={-90} href={`#${arrowTakesWhere}`}>
                     <i className={`${arrowIcon} mbr-iconfont`}></i>
                 </Link>
           </div>

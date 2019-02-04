@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CircularProgressbar from 'react-circular-progressbar'
-import 'react-circular-progressbar/dist/styles.css'
+// import 'react-circular-progressbar/dist/styles.css'
 
 export default class Skill extends Component {
   render() {

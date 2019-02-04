@@ -19,8 +19,8 @@ export default class Footer extends Component {
                           </a>
                       </div>
                   </div>
-                  { footerContent.content.map(widget => (
-                    <div className="col-12 col-md-3 mbr-fonts-style display-7">
+                  { footerContent.content.map((widget, index) => (
+                    <div key={index} className="col-12 col-md-3 mbr-fonts-style display-7">
                         <h5 className="pb-3">{ widget.title }</h5>
                         <p className="mbr-text">{ widget.body }</p>
                     </div>
@@ -38,8 +38,8 @@ export default class Footer extends Component {
                       </div>
                       <div className="col-md-6">
                           <div className="social-list align-right">
-                          { socialLinks.icons.map(icon => (
-                              <div className="soc-item">
+                          { socialLinks.icons.map((icon, index) => (
+                              <div key={index} className="soc-item">
                                   <a href={icon.link} target="_blank" rel="noopener noreferrer">
                                       <span className={`mbr-iconfont mbr-iconfont-social socicon-${icon.icon} socicon`} media-simple="true"></span>
                                   </a>
