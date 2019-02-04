@@ -1,0 +1,16 @@
+import React from 'react'
+import { navBar } from './navBar'
+
+export const stage = "PROD"
+export const devURL = "http://localhost:3000"
+
+export const meta = {
+  name: 'Kumar Abhirup',
+  title: 'Kumar Abhirup',
+  website: 'https://kumarabhirup.com',
+  tagline: (<>A Jnr. developer with a passion for learning 👋🏻 <br /><br /></>), // A 15 year-old web developer 👋🏻
+  image: navBar.logo,
+  favicon: `/static/favicon.ico`,
+  email: `hey@kumarabhirup.com`,
+  domain: stage === "PROD" ? 'https://kumar.now.sh' : devURL
+}
