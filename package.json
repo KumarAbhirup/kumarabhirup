@@ -6,7 +6,7 @@
     "dev": "next -p 3006",
     "build": "next build",
     "start": "next start -p 3006",
-    "deploy": "npm run build && now ./next -A ../now.json --public --name=kumarabhirup"
+    "deploy": "now --dotenv .env"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
