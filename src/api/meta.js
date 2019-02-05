@@ -1,9 +1,6 @@
 import React from 'react'
 import { navBar } from './navBar'
 
-export const stage = "PROD"
-export const devURL = "http://localhost:3006"
-
 export const meta = {
   name: 'Kumar Abhirup',
   title: 'Kumar Abhirup',
@@ -14,5 +11,5 @@ export const meta = {
   image: navBar.logo,
   favicon: `/static/favicon.ico`,
   email: `hey@kumarabhirup.com`,
-  domain: stage === "PROD" ? 'https://kumar.now.sh' : devURL
+  domain: process.env.NODE_ENV === "production" ? process.env.PROD_DOMAIN : process.env.DEV_DOMAIN
 }
