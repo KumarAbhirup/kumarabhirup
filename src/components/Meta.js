@@ -39,9 +39,11 @@ const Meta = () => (
           `window.dataLayer = window.dataLayer || []
           function gtag() {dataLayer.push(arguments)}
           gtag('js', new Date());
-          gtag('config', 'UA-80291721-6');`
+          gtag('config', '${process.env.GA_TRACKING_ID}');`
         }
       </script>
+
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
     </Head>
 )
