@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 
 export default class Contact extends Component {
   
@@ -55,11 +55,11 @@ export default class Contact extends Component {
                                       <textarea className="form-control input" name="message" rows="3" data-form-field="Message" placeholder={data.placeholders.message} style={{resize:"none"}} id="message-form4-n"></textarea>
                                   </div>
                                   <div className="col-md-12" data-for="recaptcha" style={{alignItems: "center"}}>
-                                      <ReCAPTCHA 
+                                      {/* <ReCAPTCHA 
                                         sitekey={process.env.RECAPTCHA_CLIENT_KEY}
                                         onChange={this.onCaptchaChange}
                                         theme="dark"
-                                      />
+                                      /> */}
                                   </div>
                                   <div className="input-group-btn col-md-12" style={{marginTop: "10px"}}>
                                       <button href="" type="submit" className="btn btn-primary btn-form display-4" disabled={data.disabled}>{ data.submitText }</button>
