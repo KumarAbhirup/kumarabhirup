@@ -18,9 +18,10 @@ export const contactSection = {
   submitText: `THIS FORM IS YET UNDER CONSTRUCTION 😉`, // `SEND MESSAGE`,
   map: "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik",
   placeholders: {
-    name: `Your good name 😃`,
-    phone: `Phone with ISD`,
-    email: `Your REAL email 😠`,
+    name: `Full name`,
+    phone: `Phone: +91-7304257125`,
+    email: `A valid email`,
+    subject: `Subject of the message`,
     message: `Write in brief...`
   },
   disabled: true
