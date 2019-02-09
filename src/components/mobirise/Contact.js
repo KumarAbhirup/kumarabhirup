@@ -19,28 +19,27 @@ export default class Contact extends Component {
     this.setState({ [e.target.name]: e.target.value })
     const codeToExec = `this.${e.target.name}Validation(e)`
     await eval(codeToExec)
-    this.setState({ disabled: this.isDisabled() })
   }
 
   // Name validation
   nameValidation = e => {
     if(e.target.value === null || e.target.value.length === 0) {
-      this.setState({ name: null, nameError: null })
+      this.setState({ name: null, nameError: null, disabled: this.isDisabled() })
     } else if(e.target.value.length < 4) {
-      this.setState({ nameError: `Fullname so small? 🤔` })
+      this.setState({ nameError: `Fullname so small? 🤔`, disabled: this.isDisabled() })
     } else {
-      this.setState({ nameError: null })
+      this.setState({ nameError: null, disabled: this.isDisabled() })
     }
   }
 
   // Email validation
   emailValidation = e => {
     if(e.target.value === null || e.target.value.length === 0) {
-      this.setState({ email: null, emailError: null })
+      this.setState({ email: null, emailError: null, disabled: this.isDisabled() })
     } else if(!validateEmail(e.target.value)) {
-      this.setState({ emailError: `Please enter your CORRECT EMAIL ADDRESS! 😡` })
+      this.setState({ emailError: `Please enter your CORRECT EMAIL ADDRESS! 😡`, disabled: this.isDisabled() })
     } else {
-      this.setState({ emailError: null })
+      this.setState({ emailError: null, disabled: this.isDisabled() })
     }
   }
 
@@ -55,9 +54,9 @@ export default class Contact extends Component {
     .catch(err => console.log("Some error just triggered!", err.message))
 
     if(this.state.phone != null && !isPhoneValid){
-      this.setState({ phoneError: `Please write a valid phone number.` })
+      this.setState({ phoneError: `Please write a valid phone number.`, disabled: this.isDisabled() })
     } else {
-      this.setState({ phoneError: null })
+      this.setState({ phoneError: null, disabled: this.isDisabled() })
     }
 
   }
@@ -65,22 +64,22 @@ export default class Contact extends Component {
   // Subject validation
   subjectValidation = e => {
     if(e.target.value === null || e.target.value.length === 0) {
-      this.setState({ subject: null, subjectError: null })
+      this.setState({ subject: null, subjectError: null, disabled: this.isDisabled() })
     } else if(e.target.value.length < 6) {
-      this.setState({ subjectError: `Subject needs to be longer!` })
+      this.setState({ subjectError: `Subject needs to be longer!`, disabled: this.isDisabled() })
     } else {
-      this.setState({ subjectError: null })
+      this.setState({ subjectError: null, disabled: this.isDisabled() })
     }
   }
 
   // Message validation
   messageValidation = e => {
     if(e.target.value === null || e.target.value.length === 0) {
-      this.setState({ message: null, messageError: null })
+      this.setState({ message: null, messageError: null, disabled: this.isDisabled() })
     } else if(e.target.value.length < 9) {
-      this.setState({ messageError: `Can you not express yourself some more?` })
+      this.setState({ messageError: `Can you not express yourself some more?`, disabled: this.isDisabled() })
     } else {
-      this.setState({ messageError: null })
+      this.setState({ messageError: null, disabled: this.isDisabled() })
     }
   }
 
@@ -89,10 +88,9 @@ export default class Contact extends Component {
     console.log('Captcha loaded.')
   }
   verifyCaptcha = (res) => {
-    this.setState({ disabled: this.isDisabled() })
     if(res) {
-      this.setState({ human: true })
-    } 
+      this.setState({ human: true, disabled: this.isDisabled() })
+    }
   }
 
   isDisabled = () => {
