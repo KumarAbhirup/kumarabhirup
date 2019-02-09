@@ -24,9 +24,9 @@ export default class Contact extends Component {
 
   // Name validation
   nameValidation = e => {
-    if(this.state.name === null) {
-      this.setState({ nameError: null })
-    } else if(this.state.name.length < 4 && this.state.name.length > 0) {
+    if(e.target.value === null || e.target.value.length === 0) {
+      this.setState({ name: null, nameError: null })
+    } else if(e.target.value.length < 4) {
       this.setState({ nameError: `Fullname so small? 🤔` })
     } else {
       this.setState({ nameError: null })
@@ -35,9 +35,9 @@ export default class Contact extends Component {
 
   // Email validation
   emailValidation = e => {
-    if(this.state.email === null) {
-      this.setState({ emailError: null })
-    } else if(!validateEmail(this.state.email) && this.state.email.length != 0) {
+    if(e.target.value === null || e.target.value.length === 0) {
+      this.setState({ email: null, emailError: null })
+    } else if(!validateEmail(e.target.value)) {
       this.setState({ emailError: `Please enter your CORRECT EMAIL ADDRESS! 😡` })
     } else {
       this.setState({ emailError: null })
@@ -64,9 +64,9 @@ export default class Contact extends Component {
 
   // Subject validation
   subjectValidation = e => {
-    if(this.state.subject === null) {
-      this.setState({ subjectError: null })
-    } else if(this.state.subject.length < 6 && this.state.subject.length > 0) {
+    if(e.target.value === null || e.target.value.length === 0) {
+      this.setState({ subject: null, subjectError: null })
+    } else if(e.target.value.length < 6) {
       this.setState({ subjectError: `Subject needs to be longer!` })
     } else {
       this.setState({ subjectError: null })
@@ -75,9 +75,9 @@ export default class Contact extends Component {
 
   // Message validation
   messageValidation = e => {
-    if(this.state.message === null) {
-      this.setState({ messageError: null })
-    } else if(this.state.message.length < 9 && this.state.message.length > 0) {
+    if(e.target.value === null || e.target.value.length === 0) {
+      this.setState({ message: null, messageError: null })
+    } else if(e.target.value.length < 9) {
       this.setState({ messageError: `Can you not express yourself some more?` })
     } else {
       this.setState({ messageError: null })
@@ -89,9 +89,9 @@ export default class Contact extends Component {
     console.log('Captcha loaded.')
   }
   verifyCaptcha = (res) => {
+    this.setState({ disabled: this.isDisabled() })
     if(res) {
       this.setState({ human: true })
-      this.setState({ disabled: this.isDisabled() })
     } 
   }
 
@@ -102,7 +102,7 @@ export default class Contact extends Component {
       this.state.subject != null &&
       this.state.message != null &&
       this.state.nameError === null && 
-      this.state.phoneError === null && 
+      // this.state.phoneError === null && 
       this.state.emailError === null && 
       this.state.subjectError === null && 
       this.state.messageError === null &&
