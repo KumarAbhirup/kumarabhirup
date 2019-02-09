@@ -89,7 +89,8 @@ export default class Contact extends Component {
   }
   verifyCaptcha = (res) => {
     if(res) {
-      this.setState({ human: true, disabled: this.isDisabled() })
+      this.setState({ human: true })
+      this.setState({ disabled: this.isDisabled() })
     }
   }
 
