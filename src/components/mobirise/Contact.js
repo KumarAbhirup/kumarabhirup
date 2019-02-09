@@ -12,7 +12,8 @@ export default class Contact extends Component {
   
   // State Management
   state = {
-    human: false
+    human: false,
+    disabled: true
   }
   saveToState = async e => {
     this.setState({ [e.target.name]: e.target.value })
@@ -23,7 +24,9 @@ export default class Contact extends Component {
 
   // Name validation
   nameValidation = e => {
-    if(e.target.value.length < 4) {
+    if(this.state.name === null) {
+      this.setState({ nameError: null })
+    } else if(this.state.name.length < 4 && this.state.name.length > 0) {
       this.setState({ nameError: `Fullname so small? 🤔` })
     } else {
       this.setState({ nameError: null })
@@ -32,7 +35,9 @@ export default class Contact extends Component {
 
   // Email validation
   emailValidation = e => {
-    if(!validateEmail(e.target.value)) {
+    if(this.state.email === null) {
+      this.setState({ emailError: null })
+    } else if(!validateEmail(this.state.email) && this.state.email.length != 0) {
       this.setState({ emailError: `Please enter your CORRECT EMAIL ADDRESS! 😡` })
     } else {
       this.setState({ emailError: null })
@@ -59,8 +64,10 @@ export default class Contact extends Component {
 
   // Subject validation
   subjectValidation = e => {
-    if(e.target.value.length < 6) {
-      this.setState({ subjectError: `I hate lazy ppl writing less in subject field!` })
+    if(this.state.subject === null) {
+      this.setState({ subjectError: null })
+    } else if(this.state.subject.length < 6 && this.state.subject.length > 0) {
+      this.setState({ subjectError: `Subject needs to be longer!` })
     } else {
       this.setState({ subjectError: null })
     }
@@ -68,8 +75,10 @@ export default class Contact extends Component {
 
   // Message validation
   messageValidation = e => {
-    if(e.target.value.length < 9) {
-      this.setState({ messageError: `Can you not express yourself longer?` })
+    if(this.state.message === null) {
+      this.setState({ messageError: null })
+    } else if(this.state.message.length < 9 && this.state.message.length > 0) {
+      this.setState({ messageError: `Can you not express yourself some more?` })
     } else {
       this.setState({ messageError: null })
     }
@@ -82,6 +91,7 @@ export default class Contact extends Component {
   verifyCaptcha = (res) => {
     if(res) {
       this.setState({ human: true })
+      this.setState({ disabled: this.isDisabled() })
     } 
   }
 
