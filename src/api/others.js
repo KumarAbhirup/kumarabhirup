@@ -15,14 +15,14 @@ export const contactSection = {
   icon: `mbri-speed`,
   iconText: `Instant reply`,
   text: `Trust. Write. I don't disclose 😜`,
-  submitText: `THIS FORM IS YET UNDER CONSTRUCTION 😉`, // `SEND MESSAGE`,
+  submitText: `SEND MESSAGE 💌`,
   map: "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=IQubex,+Nashik",
   placeholders: {
-    name: `Full name`,
+    name: `* Full name`,
     phone: `Phone: +91-7304257125`,
-    email: `A valid email`,
-    subject: `Subject of the message`,
-    message: `Write in brief...`
+    email: `* A valid email`,
+    subject: `* Subject of the message`,
+    message: `* Write in brief...`
   },
   disabled: true
 }
