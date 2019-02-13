@@ -137,6 +137,12 @@ export default class Contact extends Component {
     }
   }
 
+  // ReCAPTCHA Expired
+  expireCaptcha = () => {
+    this.setState({ human: false, humanKey: null })
+    this.setState({ disabled: this.isDisabled() })
+  }
+
   isDisabled = () => {
     if (
       this.state.fullname != null &&
@@ -238,6 +244,7 @@ export default class Contact extends Component {
                                             render="explicit"
                                             onloadCallback={this.onCaptchaLoad}
                                             verifyCallback={this.verifyCaptcha}
+                                            expiredCallback={this.expireCaptcha}
                                           />
                                       </div>
                                       <div className="input-group-btn col-md-12" style={{marginTop: "10px"}}>
