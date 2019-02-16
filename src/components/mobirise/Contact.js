@@ -3,6 +3,7 @@ import ReCAPTCHA from 'react-recaptcha'
 import styled from 'styled-components'
 import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
+import Head from 'next/head'
 
 import validateEmail from '../../lib/validateEmail'
 import { DisplayError } from '../ErrorMessage'
@@ -188,6 +189,9 @@ export default class Contact extends Component {
     const { data } = this.props
     return (
       <>
+      {/* <Head>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+      </Head> */}
       <section className="mbr-section form4 cid-rezNDSe3Nt" id="form4-n" data-rv-view="243">
           <div className="container">
               <div className="row">
@@ -241,7 +245,7 @@ export default class Contact extends Component {
                                       <div className="col-md-12" data-for="recaptcha" style={{alignItems: "center"}}>
                                           <ReCAPTCHA 
                                             sitekey={process.env.RECAPTCHA_CLIENT_KEY}
-                                            render="explicit"
+                                            // render="explicit"
                                             onloadCallback={this.onCaptchaLoad}
                                             verifyCallback={this.verifyCaptcha}
                                             expiredCallback={this.expireCaptcha}

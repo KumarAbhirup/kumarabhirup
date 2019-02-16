@@ -27,6 +27,7 @@
     "react-circular-progressbar": "^1.0.0",
     "react-css-grid": "^2.0.0-0",
     "react-dom": "^16.7.0",
+    "react-ga": "^2.5.7",
     "react-recaptcha": "^2.3.10",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3",
