@@ -41,7 +41,7 @@ export default class Meta extends React.Component {
         <link rel="stylesheet" href="/static/prebuilt/mobirise/css/mbr-additional.css" type="text/css" />
         <link rel="stylesheet" href="/static/styles/CircularProgressBar.css" type="text/css" />
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        {/* <script src="https://www.google.com/recaptcha/api.js" async defer></script> */}
 
       </Head>
     )

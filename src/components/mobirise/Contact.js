@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import ReCAPTCHA from 'react-recaptcha'
+import ReCAPTCHA from 'react-google-recaptcha'
 import styled from 'styled-components'
 import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
-import Head from 'next/head'
 
 import validateEmail from '../../lib/validateEmail'
 import { DisplayError } from '../ErrorMessage'
@@ -244,11 +243,11 @@ export default class Contact extends Component {
                                       </div>
                                       <div className="col-md-12" data-for="recaptcha" style={{alignItems: "center"}}>
                                           <ReCAPTCHA 
-                                            sitekey={process.env.RECAPTCHA_CLIENT_KEY}
+                                            sitekey={'6LfMx48UAAAAABKWC1MVZN4pEtJ_CiY-E5hz8jKm'}
                                             // render="explicit"
-                                            onloadCallback={this.onCaptchaLoad}
-                                            verifyCallback={this.verifyCaptcha}
-                                            expiredCallback={this.expireCaptcha}
+                                            // onloadCallback={this.onCaptchaLoad}
+                                            onChange={this.verifyCaptcha}
+                                            onExpired={this.expireCaptcha}
                                           />
                                       </div>
                                       <div className="input-group-btn col-md-12" style={{marginTop: "10px"}}>
