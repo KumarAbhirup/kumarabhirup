@@ -4,7 +4,7 @@ import ApolloClient from 'apollo-boost';
 function createClient({ headers }) {
 
   return new ApolloClient({
-    uri: process.env.NODE_ENV === 'development' ? process.env.DEV_ENDPOINT : process.env.PROD_ENDPOINT,
+    uri: `https://ka-backend.herokuapp.com/graphql`,
     request: operation => {
       operation.setContext({
         // fetchOptions: {
