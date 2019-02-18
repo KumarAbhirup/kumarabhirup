@@ -1,36 +1,42 @@
 {
   "name": "kumarabhirup",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "private": true,
   "scripts": {
     "dev": "next -p 3006",
     "build": "next build",
     "start": "next start -p 3006",
-    "deploy": "npm run build && now ./next -A ../now.json --public --name=kumarabhirup"
+    "deploy": "now --dotenv .env"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "apollo-boost": "^0.1.27",
     "css-loader": "^2.1.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "fs": "0.0.1-security",
     "get-age": "^1.0.1",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
     "next": "^7.0.2",
+    "next-with-apollo": "^3.3.2",
     "postcss-loader": "^3.0.0",
     "react": "^16.7.0",
+    "react-apollo": "^2.4.1",
     "react-circular-progressbar": "^1.0.0",
-    "react-css-grid": "^2.0.0-0",
     "react-dom": "^16.7.0",
+    "react-ga": "^2.5.7",
+    "react-google-recaptcha": "^1.0.5",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3",
     "react-scroll": "^1.7.10",
-    "react-stack-grid": "^0.7.1",
     "serve": "^10.1.1",
     "style-loader": "^0.23.1",
     "styled-components": "^4.1.3",
     "styled-css-grid": "^1.2.1",
-    "terser": "^3.14.1"
+    "terser": "^3.14.1",
+    "waait": "^1.0.3"
   },
   "devDependencies": {},
   "resolutions": {

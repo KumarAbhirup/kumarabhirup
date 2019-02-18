@@ -5,6 +5,19 @@ export const activities = {
   text: `Here I reveal latest and greatest ongoing things of my life!`,
   activities: [
     {
+      timestamp: `10 February 2019`,
+      title: (
+        <>
+          Contact Form started 📝
+        </>
+      ),
+      body: (
+        <>
+          Message me there! I'm Waiting 🙂
+        </>
+      )
+    },
+    {
       timestamp: `15 January 2019`, // 49573986734
       title: (
         <>
