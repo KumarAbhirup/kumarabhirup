@@ -78,7 +78,7 @@ class Portfolio extends Component {
                                 </PortfolioCard>
                             ))}
                         </Grid>
-                        {data.moreButtonText && <BigButton onClick={this.handleMoreClick}>{ data.moreButtonText }</BigButton>}
+                        {data.moreButtonText && <a href="/portfolio"><BigButton>{ data.moreButtonText }</BigButton></a>}
                 </div>
             </section>
         </Element>
