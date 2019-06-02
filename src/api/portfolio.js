@@ -1,5 +1,17 @@
 const projects = [
     { 
+      title: `PaprInk`,
+      description: `An ismorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
+      link: `https://paprink.now.sh`,
+      image: `https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
+    },
+    { 
+      title: `FlusLive`,
+      description: `Twitch clone, made with React and Redux.`,
+      link: `https://www.github.com/KumarAbhirup/fluslive`,
+      image: `https://camo.githubusercontent.com/027828828ff2d084a4273b71e4a8b9d8f048288b/68747470733a2f2f692e6962622e636f2f507a4e5350354b2f666c75736c6976652e6a7067`
+    },
+    { 
       title: `bulk-mail-cli`,
       description: `A command line interface (cli) application that sends automated and dynamic emails to the list.`,
       link: `https://bulkmail.now.sh`,
@@ -10,12 +22,6 @@ const projects = [
       description: `This website itself is a part of my portfolio... It is created in React.JS and uses GraphQL to empower the content.`,
       link: `https://www.github.com/KumarAbhirup/kumarabhirup`,
       image: `/static/prebuilt/images/kumarabhirupwebsite.jpg`
-    },
-    { 
-      title: `FlusLive`,
-      description: `Twitch clone, made with React and Redux.`,
-      link: `https://www.github.com/KumarAbhirup/fluslive`,
-      image: `https://camo.githubusercontent.com/027828828ff2d084a4273b71e4a8b9d8f048288b/68747470733a2f2f692e6962622e636f2f507a4e5350354b2f666c75736c6976652e6a7067`
     },
     { 
       title: `Glitter (twitter bot)`,
