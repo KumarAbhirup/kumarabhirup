@@ -1,7 +1,7 @@
 const projects = [
     { 
       title: `PaprInk`,
-      description: `An ismorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
+      description: `An isomorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
       link: `https://paprink.com`,
       image: `https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
     },
