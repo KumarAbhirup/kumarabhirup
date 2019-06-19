@@ -16,6 +16,8 @@ export default class Skills extends Component {
             <h4>Beginner level 👉 {data.beginnerLevel.map(skill => <><u>{ skill }</u> &nbsp;</>)}</h4>
             <div className="pt-3"></div>
             <h4>Also know 👉 {data.alsoKnow.map(skill => <><u>{ skill }</u> &nbsp;</>)}</h4>
+            <div className="pt-3"></div>
+            <h5>In my wishlist ❤️ {data.wishlist.map(skill => <><u>{ skill }</u> &nbsp;</>)}</h5>
           </div>
         </div>
       </section>

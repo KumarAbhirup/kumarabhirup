@@ -7,8 +7,8 @@ export const skills = {
     { name: 'Node.JS', percent: 75, icon: "https://cdn.iconscout.com/icon/free/png-256/nodejs-2-226035.png" },
     { name: 'React.JS', percent: 62, icon: "https://cdn.auth0.com/blog/react-js/react.png" },
     { name: 'GraphQL', percent: 60, icon: "https://montykamath.files.wordpress.com/2018/02/graphql.png" }
-    // { name: 'WordPress', percent: 55, icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png" },
   ],
   beginnerLevel: ['React Native', 'React Hooks', 'Gatsby', 'Redux'],
-  alsoKnow: ['WordPress', 'Laravel', 'Git', 'Heroku', 'Next.js']
+  alsoKnow: ['WordPress', 'Laravel', 'Git', 'Heroku', 'Next.js'],
+  wishlist: ['Vue.js', 'Docker', 'Serverless', 'Electron', 'Progressive Web App', 'AWS']
 }
