@@ -24,7 +24,6 @@
     "postcss-loader": "^3.0.0",
     "react": "^16.7.0",
     "react-apollo": "^2.4.1",
-    "react-circular-progressbar": "^1.0.0",
     "react-dom": "^16.7.0",
     "react-ga": "^2.5.7",
     "react-google-recaptcha": "^1.0.5",

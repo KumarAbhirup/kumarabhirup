@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Skill from './Skill';
+import Skill from './Skill'
 
 export default class Skills extends Component {
   render() {
@@ -12,6 +12,11 @@ export default class Skills extends Component {
           <h2 className="mbr-section-title pb-3 align-center mbr-fonts-style display-2">{ data.title }</h2>
           <h3 className="mbr-section-subtitle mbr-fonts-style display-5">{ data.text }</h3>
           <div className="media-container-row pt-5 mt-2">{ data.skills.map((skill, index) => (<Skill key={index} skill={skill} />)) }</div>
+          <div style={{margin: '30px auto', textAlign: 'center', cursor: 'default'}}>
+            <h4>Beginner level 👉 {data.beginnerLevel.map(skill => <><u>{ skill }</u> &nbsp;</>)}</h4>
+            <div className="pt-3"></div>
+            <h4>Also know 👉 {data.alsoKnow.map(skill => <><u>{ skill }</u> &nbsp;</>)}</h4>
+          </div>
         </div>
       </section>
     )

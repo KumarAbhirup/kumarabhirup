@@ -5,7 +5,20 @@ export const activities = {
   text: `Here I reveal latest and greatest ongoing things of my life!`,
   activities: [
     {
-      timestamp: `10 February 2019`,
+      timestamp: `19th June 2019`,
+      title: (
+        <>
+          Updated Skills section 🔁
+        </>
+      ),
+      body: (
+        <>
+          The updated skills section, explains me better.
+        </>
+      )
+    },
+    {
+      timestamp: `10th February 2019`,
       title: (
         <>
           Contact Form started 📝
@@ -18,7 +31,7 @@ export const activities = {
       )
     },
     {
-      timestamp: `15 January 2019`, // 49573986734
+      timestamp: `15th January 2019`, // 49573986734
       title: (
         <>
           Now on <a href="https://twitter.com/kumar_abhirup" target="_blank" rel="noopener noreferrer">Twitter</a>&nbsp;🐦
@@ -31,7 +44,7 @@ export const activities = {
       )
     },
     {
-      timestamp: `1 January 2019`,
+      timestamp: `1st January 2019`,
       title: (<>Happy new Year 🎊🥂</>),
       body: (
         <>
@@ -40,7 +53,7 @@ export const activities = {
       )
     },
     {
-      timestamp: `25 December 2018`,
+      timestamp: `25th December 2018`,
       title: (<>Merry Christmas 🎄</>),
       body: (
         <>
