@@ -10,5 +10,5 @@ export const skills = {
   ],
   beginnerLevel: ['React Native', 'React Hooks', 'Gatsby', 'Redux'],
   alsoKnow: ['WordPress', 'Laravel', 'Git', 'Heroku', 'Next.js'],
-  wishlist: ['Vue.js', 'Docker', 'Serverless', 'Electron', 'Progressive Web App', 'AWS']
+  wishlist: ['Vue.js', 'Docker', 'TypeScript', 'Electron', 'Progressive Web App', 'AWS']
 }
