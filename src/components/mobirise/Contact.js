@@ -57,10 +57,35 @@ export default class Contact extends Component {
     human: false,
     disabled: true
   }
+
   saveToState = async e => {
     this.setState({ [e.target.name]: e.target.value })
-    const codeToExec = `this.${e.target.name}Validation(e)`
-    await eval(codeToExec)
+    
+    switch (e.target.name) {
+      case 'fullname':
+        this.fullnameValidation(e)
+        break;
+
+      case 'email':
+        this.emailValidation(e)
+        break;
+
+      case 'phone':
+        this.phoneValidation(e)
+        break;
+
+      case 'subject':
+        this.subjectValidation(e)
+        break;
+
+      case 'message':
+        this.messageValidation(e)
+        break;
+    
+      default:
+        break;
+    }
+
     this.setState({ disabled: this.isDisabled() })
   }
 
