@@ -3,19 +3,25 @@ const projects = [
       title: `PaprInk`,
       description: `An isomorphic webapp for writers to make habit of writing everyday. Complete CRUD interface built on Server Side using React, Apollo, Prisma and GraphQL.`,
       link: `https://paprink.com`,
-      image: `https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
+      image: `https://i.ibb.co/QXLsPdD/logo.jpg` //`https://i.ibb.co/pQRG5ZT/PaprInk.jpg`
     },
     { 
-      title: `FlusLive`,
-      description: `Twitch clone, made with React and Redux.`,
-      link: `https://www.github.com/KumarAbhirup/fluslive`,
-      image: `https://camo.githubusercontent.com/027828828ff2d084a4273b71e4a8b9d8f048288b/68747470733a2f2f692e6962622e636f2f507a4e5350354b2f666c75736c6976652e6a7067`
+      title: `JoinMyCall`,
+      description: `This app makes your colleagues take a connection/camera/mic test before joining a call. Hosts can create infinite JoinMyCall links to invite guests in meeting. Guests can either skip or do the connection test.`,
+      link: `https://joinmycall.now.sh`,
+      image: `https://i.ibb.co/fd2rF97/favicon.jpg`
     },
     { 
       title: `bulk-mail-cli`,
       description: `A command line interface (cli) application that sends automated and dynamic emails to the list.`,
       link: `https://bulkmail.now.sh`,
       image: `/static/prebuilt/images/bulkmail.gif`
+    },
+    { 
+      title: `FlusLive`,
+      description: `Twitch clone, made with React and Redux.`,
+      link: `https://www.github.com/KumarAbhirup/fluslive`,
+      image: `https://camo.githubusercontent.com/027828828ff2d084a4273b71e4a8b9d8f048288b/68747470733a2f2f692e6962622e636f2f507a4e5350354b2f666c75736c6976652e6a7067`
     },
     { 
       title: `kumarabhirup.com`,
